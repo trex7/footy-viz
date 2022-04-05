@@ -1,2 +1,3 @@
 # footy-viz
-Visualizing soccer data for INFO 247
+
+Visualizing soccer data for INFO 247.

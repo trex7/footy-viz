@@ -42,7 +42,6 @@ england_event_data <- StatsBombFreeEvents(all_match_data)
 england_event_data <- allclean(england_event_data)
 
 ## just HK data
-
 full_hk <- england_event_data %>%
   filter(player.name == 'Harry Kane')
 
@@ -73,12 +72,52 @@ minutes_hk <- minutes_data %>%
 agg_hk <- left_join(shots_hk, minutes_hk) %>%
   mutate(shots_per90 = shots/nineties)
 
-## HK passes
+## HK passes, that are completed into the box
 hk_box_passes <- england_event_data %>%
   filter(type.name=="Pass" & is.na(pass.outcome.name) & player.id==10955) %>%
   filter(pass.end_location.x>=102 & pass.end_location.y<=62 & pass.end_location.y>=18) # the box!
-  
-## Draw Passing Plot
+
+## HK Passes, switches
+hk_switches <- england_event_data %>%
+  filter(type.name=="Pass" & is.na(pass.outcome.name) & player.id==10955) %>% 
+  filter(pass.switch == TRUE) #%>%
+  #summarize(count = n()) %>%
+  #select(count)
+
+## HK, Receptions inside the middle third?
+hk_receptions_middle_third <- england_event_data %>%
+  filter(type.name=="Ball Receipt*" & player.id==10955) %>%
+  filter(location.x >= 40 & location.x <= 80)
+
+## HK, Passes that start in the middle third?
+hk_passes_middle_third <- england_event_data %>%
+  filter(type.name=="Pass" & is.na(pass.outcome.name) & player.id==10955) %>% 
+  filter(location.x >=40 & location.x <=80)
+
+## HK, goals! including penalties.
+hk_goals <- england_event_data %>%
+  filter(player.name == 'Harry Kane' & type.name == 'Shot' & shot.outcome.id == 97)
+
+## mega df, then, will contain...
+## shots, minutes, nineties, shots_per90, goals, switches, 
+## balls into the box, middle 1/3 receptions, middle 1/3 passes
+agg_hk <- agg_hk %>% 
+  mutate(
+         goals = hk_goals %>% summarize(count = n()),
+         goals_per90 = goals/nineties,
+         middle_third_passes = hk_passes_middle_third %>% summarize(count = n()), 
+         middle_third_passes_per90 = middle_third_passes / nineties,
+         middle_third_receptions = hk_receptions_middle_third %>% summarize(count = n()),
+         middle_third_receptions_per90 = middle_third_receptions / nineties,
+         passes_into_box = hk_box_passes %>% summarize(count = n()),
+         passes_into_box_per90 = passes_into_box / nineties,
+         switches = hk_switches %>% summarize(count = n()),
+         switches_per90 = switches / nineties
+         )
+
+## Pitch Plots
+
+## Draw 18 Passing Plot
   create_Pitch() + 
   geom_segment(data = hk_box_passes, aes(x = location.x,
                                   y = location.y,
@@ -93,17 +132,58 @@ hk_box_passes <- england_event_data %>%
   scale_y_reverse() +
   coord_fixed(ratio = 105/100)
   
-## HK Shots
+## Draw Full Passing Plot
+  create_Pitch() + 
+    geom_segment(data = hk_all_passes, aes(x = location.x,
+                                           y = location.y,
+                                           xend = pass.end_location.x,
+                                           yend = pass.end_location.y),
+                 lineend = "round",
+                 size = 0.5,
+                 colour = "#000000",
+                 arrow = arrow(length = unit(0.07, "inches"),
+                               ends = "last", type = "open")) +
+    labs(title = "Harry Kane, Completed Passes", subtitle = "Word Cup 2018 and Euro 2020") +
+    scale_y_reverse() +
+    coord_fixed(ratio = 105/100)
+  
+## Draw Switches
+  create_Pitch() + 
+    geom_segment(data = hk_switches, aes(x = location.x,
+                                           y = location.y,
+                                           xend = pass.end_location.x,
+                                           yend = pass.end_location.y),
+                 lineend = "round",
+                 size = 0.5,
+                 colour = "#000000",
+                 arrow = arrow(length = unit(0.07, "inches"),
+                               ends = "last", type = "open")) +
+    labs(title = "Harry Kane, Completed Switches", subtitle = "Word Cup 2018 and Euro 2020") +
+    scale_y_reverse() +
+    coord_fixed(ratio = 105/100)
+  
+## Draw Shooting Maps
+
+## HK Shots, non penalty
 hk_shots <- england_event_data %>% 
   filter(player.id == 10955) %>%
   filter(type.name == "Shot" & (shot.type.name != "Penalty" | is.na(shot.type.name))) %>%
   mutate(goal_or_no_goal = ifelse(shot.outcome.id == 97, "goal", "no_goal"))
-
+  
 ## shot data... shot.outcome.id -> 97 is a goal
 ## shot data... shot.body_part.id -> "Head" = 21, "Right Foot" = 23, "Left Foot" = 24
 colnames(hk_shots)
 
-create_Shot_Map(hk_shots, "Harry Kane Shot Map", "WC 2018 + Euro 2020", xG = TRUE)    
+## subsetted df with only relevant info for plotting
+hk_shots_smaller <- hk_shots %>%
+  select(location.x, location.y, goal_or_no_goal, shot.statsbomb_xg)
+
+shot_map <- create_Shot_Map(hk_shots_smaller, "Harry Kane Shot Map", "WC 2018 and Euro 2020", xG_and_footedness = FALSE, vanilla = FALSE, xG_for_Scale = TRUE)    
+
+## export as svg
+ggsave(file="shot_map.svg", plot=shot_map, width=16, height=16)
+
+## Draw Heatmap
 
 ## heatmap -- where is HK playing? -- offensive actions only...
 offensive_events <- c("Ball Receipt*", "Ball Recovery","Carry",
@@ -132,26 +212,7 @@ binned_heatmap <- heatmap %>%
             location.y = median(location.y)) %>%
   group_by(xbin, ybin)
 
-# need to add a few more so its fully filled out.
 distinct_binned_heatmap <- distinct(binned_heatmap)
-
-temp_bins <- read.csv("temp-bins.csv", header = FALSE)
-colnames(temp_bins) <- colnames(distinct_binned_heatmap)
-
-# recode xbin
-temp_bins$xbin <- as.factor(temp_bins$xbin)
-# re do its levels
-levels(temp_bins$xbin) <- levels(distinct_binned_heatmap$xbin)
-
-temp_bins$xbin[1] <- distinct_binned_heatmap$xbin[1]
-
-# same for ybin
-temp_bins$ybin <- as.factor(temp_bins$ybin)
-# re do its levels
-levels(temp_bins$ybin) <- levels(distinct_binned_heatmap$ybin)
-
-# now combine them
-full_binned_heatmap <- as.data.frame(rbind(distinct_binned_heatmap, temp_bins))
 
 activitycolors <- c("#dc2429", "#dc2329", "#df272d", "#df3238", "#e14348", "#e44d51",
                              "#e35256", "#e76266", "#e9777b", "#ec8589", "#ec898d", "#ef9195",
@@ -161,7 +222,7 @@ activitycolors <- c("#dc2429", "#dc2329", "#df272d", "#df3238", "#e14348", "#e44
                              "#697785", "#526173", "#435367", "#3a4b60", "#2e4257", "#1d3048",
                              "#11263e", "#11273e", "#0d233a", "#020c16")
 
-ggplot(data = distinct_binned_heatmap, aes(x = location.x, y = location.y, fill = bin_pct, group=bin_pct)) +
+heatmap_viz <- ggplot(data = distinct_binned_heatmap, aes(x = location.x, y = location.y, fill = bin_pct, group=bin_pct)) +
   geom_bin2d(binwidth = c(20, 20), position = "identity", alpha = 0.9) + #2
   annotate("rect",xmin = 0, xmax = 120, ymin = 0, ymax = 80, fill = NA, colour = "black", size = 0.6) +
   annotate("rect",xmin = 0, xmax = 60, ymin = 0, ymax = 80, fill = NA, colour = "black", size = 0.6) +
@@ -205,3 +266,6 @@ ggplot(data = distinct_binned_heatmap, aes(x = location.x, y = location.y, fill 
                          scales::percent_format(accuracy = 1)) + #6
   labs(title = "Where Does Harry Kane Attack on Average?", subtitle = "WC 2018 + Euro 2020") + #7
   coord_fixed(ratio = 95/100)
+
+## export as svg
+ggsave(file="heat_map.svg", plot=heatmap_viz, width=16, height=16)

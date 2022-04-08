@@ -43,7 +43,8 @@ england_event_data <- allclean(england_event_data)
 
 ## just HK data
 full_hk <- england_event_data %>%
-  filter(player.name == 'Harry Kane')
+  filter(player.name == 'Harry Kane') %>%
+  filter(period != 5) # remove penatly shootout
 
 ## checking out what types of events there are
 full_hk %>%
@@ -53,7 +54,7 @@ full_hk %>%
     
 ## Harry Kane shots:
 ## note Harry Kane has player ID 10955
-shots_hk <- england_event_data %>%
+shots_hk <- full_hk %>%
   group_by(player.name, player.id) %>%
   filter(player.name == 'Harry Kane') %>%
   summarize(shots = sum(type.name == "Shot", na.rm = TRUE)) 
@@ -73,29 +74,29 @@ agg_hk <- left_join(shots_hk, minutes_hk) %>%
   mutate(shots_per90 = shots/nineties)
 
 ## HK passes, that are completed into the box
-hk_box_passes <- england_event_data %>%
+hk_box_passes <- full_hk %>%
   filter(type.name=="Pass" & is.na(pass.outcome.name) & player.id==10955) %>%
   filter(pass.end_location.x>=102 & pass.end_location.y<=62 & pass.end_location.y>=18) # the box!
 
 ## HK Passes, switches
-hk_switches <- england_event_data %>%
+hk_switches <- full_hk %>%
   filter(type.name=="Pass" & is.na(pass.outcome.name) & player.id==10955) %>% 
   filter(pass.switch == TRUE) #%>%
   #summarize(count = n()) %>%
   #select(count)
 
 ## HK, Receptions inside the middle third?
-hk_receptions_middle_third <- england_event_data %>%
+hk_receptions_middle_third <- full_hk %>%
   filter(type.name=="Ball Receipt*" & player.id==10955) %>%
   filter(location.x >= 40 & location.x <= 80)
 
 ## HK, Passes that start in the middle third?
-hk_passes_middle_third <- england_event_data %>%
+hk_passes_middle_third <- full_hk %>%
   filter(type.name=="Pass" & is.na(pass.outcome.name) & player.id==10955) %>% 
   filter(location.x >=40 & location.x <=80)
 
 ## HK, goals! including penalties.
-hk_goals <- england_event_data %>%
+hk_goals <- full_hk %>%
   filter(player.name == 'Harry Kane' & type.name == 'Shot' & shot.outcome.id == 97)
 
 ## mega df, then, will contain...

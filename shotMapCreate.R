@@ -11,7 +11,7 @@
 #' @return A plot of the pitch
 #' @export
 
-create_Shot_Map <- function(df, t, st, xG = FALSE) {
+create_Shot_Map <- function(df, t, st, xG_and_footedness = FALSE, vanilla = FALSE, xG_for_Scale = FALSE) {
   library(ggplot2)
   
   shotmapxgcolors <- c("#192780", "#2a5d9f", "#40a7d0", "#87cdcf", "#e7f8e6", "#f4ef95", "#FDE960", "#FCDC5F",
@@ -62,17 +62,22 @@ create_Shot_Map <- function(df, t, st, xG = FALSE) {
     labs(title = t, subtitle = st) +
     coord_flip(xlim = c(85, 125)) 
   
-    if(xG == TRUE) {
+    if(xG_and_footedness == TRUE) {
       print("TRUE")
       p <- p + geom_point(data = df, aes(x = location.x, y = location.y, fill = shot.statsbomb_xg, shape = shot.body_part.name),
                    size = 6, alpha = 0.8) +
         scale_fill_gradientn(colours = shotmapxgcolors, limit = c(0,0.8), oob=scales::squish, name = "Expected Goals Value") +
         scale_shape_manual(values = c("Head" = 21, "Right Foot" = 23, "Left Foot" = 24), name ="") + 
         guides(fill = guide_colourbar(title.position = "top"), shape = guide_legend(override.aes = list(size = 7, fill = "black")))
-    } else {
+    } else if (vanilla == TRUE) {
       print("FALSE")
       p <- p + geom_point(data = df, aes(x = location.x, y = location.y, color = goal_or_no_goal),
                           size = 6, alpha = 0.8) +
+        scale_color_manual(values = c("#56B4E9", "#999999"))
+    } else if (xG_for_Scale == TRUE) {
+      p <- p +   geom_point(data = hk_shots_smaller, aes(x = location.x, y = location.y,
+                                                         color = goal_or_no_goal, size = shot.statsbomb_xg),
+                            alpha = 0.8) +
         scale_color_manual(values = c("#56B4E9", "#999999"))
     }
   

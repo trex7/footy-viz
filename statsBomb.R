@@ -181,6 +181,8 @@ hk_shots_smaller <- hk_shots %>%
 
 shot_map <- create_Shot_Map(hk_shots_smaller, "Harry Kane Shot Map", "WC 2018 and Euro 2020", xG_and_footedness = FALSE, vanilla = FALSE, xG_for_Scale = TRUE)    
 
+sum(hk_shots_smaller$shot.statsbomb_xg)
+
 ## export as svg
 ggsave(file="shot_map.svg", plot=shot_map, width=16, height=16)
 

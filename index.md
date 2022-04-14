@@ -1,4 +1,3 @@
-<-- initial container -->
 <head>
 	<title>footy-viz</title>
 	<meta charset="utf-8">
@@ -9,6 +8,7 @@
 
 <body>
 	<div id ="home">
+		<!-- initial container -->
 		<div class="container" id = "first-container">
 			<h3>Analyzing England Soccer Superstars</h3>
 		</div>

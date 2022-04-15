@@ -1,6 +1,3 @@
-<head>
-    <script src = "https://d3js.org/d3.v4.min.js"></script>
-</head>
 <script src="js/test.js"></script>
 <body>
 	<div id ="home">

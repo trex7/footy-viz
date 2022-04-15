@@ -1,3 +1,6 @@
+<head>
+    <script src = "https://d3js.org/d3.v4.min.js"></script>
+</head>
 <script src="js/test.js"></script>
 <body>
 	<div id ="home">
@@ -10,7 +13,7 @@
 			<p>Can they win this year's World Cup?</p>
 		</div>
 		<div class="container" id = "button-test">
-			  <p class="button-able">Test Text Here</p>
+			<p class="button-able">Test Text Here</p>
 			<button onclick="changeColor()">Test Button Here</button>
 		</div>
 	</div>

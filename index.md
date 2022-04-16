@@ -13,5 +13,16 @@
 			<p class="button-able">Test Text Here</p>
 			<button onclick="changeColor()">Test Button Here</button>
 		</div>
+		<!-- test a bootstrap layout below-->
+		<div class="container" id = "starting-container">
+			<div class="row">
+				<div class="col">
+					<p>First column</p>
+				</div>
+				<div class="col">
+					<p>Second column</p>
+				</div>
+			</div>	
+ 		</div>
 	</div>
 </body>

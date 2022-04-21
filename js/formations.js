@@ -1,6 +1,3 @@
-import { select } from 'd3-selection';
-import transition from 'd3-transition';
-
 var holder = d3.select("#positions-board") // select the 'body' element
       .append("svg")           // append an SVG element to the body
       .attr("width", 1000)      

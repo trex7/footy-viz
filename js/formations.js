@@ -119,11 +119,11 @@ holder.append("path")
 var color = d3.scaleOrdinal().range(["#14293c", "pink"]);
 var color1 = d3.scaleOrdinal().range(["#14293c", "red"]);
 
-var drag = d3.drag()
-    .origin(function(d) { return d; })
-    .on("dragstart", dragstarted)
-    .on("drag", dragged)
-    .on("dragend", dragended);
+var drag = d3
+    .drag()
+    .on('start', dragstarted)
+    .on('drag', dragged)
+    .on('end', dragended)
 
 function default1(){
     // controls default behavior

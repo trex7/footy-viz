@@ -1,7 +1,6 @@
 <script src="js/test.js"></script>
 <script src="js/formations.js"></script>
 <header class="page-header" role="banner">
-	<h1 class="project-name">footy-viz</h1>
 	<h2 class="project-tagline">Advait Lad, Akshar Dhondiyal, Tim Schott | Info Viz Spring 2022 UC Berkeley</h2>
 	<a href="https://github.com/timschott/footy-viz" class="btn">View on GitHub</a>
 </header>

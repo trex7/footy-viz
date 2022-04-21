@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                  if (d.name == "Kane" || d.name == "Mount") {
                      return "#EA1F29"
                  } else {
-                     return color(d.team);
+                     return "#14283C";
                  }
             })
 
@@ -228,7 +228,7 @@ function default_lineup(){
                 if (d.name == "Kane" || d.name == "Mount") {
                     return "#EA1F29"
                 } else {
-                    return color(d.team);
+                    return "#14283C";
                 }
            });
     });
@@ -251,7 +251,7 @@ function new_lineup(){
                 if (d.name == "Kane" || d.name == "Mount" || d.name == "Alexander-Arnold") {
                     return "#EA1F29"
                 } else {
-                    return color(d.team);
+                    return "#14283C";
                 }
            });
         });

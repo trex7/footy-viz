@@ -1,18 +1,18 @@
 <script src="js/test.js"></script>
 <body>
 	<div class = "full-width-parent" id="light-blue">
-		<div class="dummy">
-			<div class="container" id = "title-container">
+		<div class="container" id = "title-container">
 				<div class="row">
 					<h3>Analyzing England Soccer Superstars</h3>
 				</div>
 			</div>
-			<div class="container" id = "intro-container">
-				<div class = "row">
-					<p>Although the English men's soccer team is one of the oldest national teams in the world, they’ve only won a single major tournament: the 1966 World Cup.</p>
-					<p>Can they win this year's World Cup?</p>
-					<p>We'll analyze their squad through a few different perspectives, focusing on 3 key players:</p>
-				</div>
+	</div>
+	<div class = "full-width-parent" id="light-blue">
+		<div class="container" id = "intro-container">
+			<div class = "row">
+				<p>Although the English men's soccer team is one of the oldest national teams in the world, they’ve only won a single major tournament: the 1966 World Cup.</p>
+				<p>Can they win this year's World Cup?</p>
+				<p>We'll analyze their squad through a few different perspectives, focusing on 3 key players:</p>
 			</div>
 		</div>
 	</div>

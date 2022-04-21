@@ -1,11 +1,9 @@
 <script src="js/test.js"></script>
 <body>
-	<div class = "full-width-parent" id="light-blue">
-		<div class="container" id = "title-container">
-				<div class="row">
-					<h3>Analyzing England Soccer Superstars</h3>
-				</div>
-			</div>
+	<div class="container w-100" id = "title-container">
+		<div class="row">
+			<h3>Analyzing England Soccer Superstars</h3>
+		</div>
 	</div>
 	<div class = "full-width-parent" id="light-blue">
 		<div class="container" id = "intro-container">

@@ -9,6 +9,7 @@
 	</div>
 	<div class="nav-links">
 		<ul class="nav-menu" id="nav-menu">
+			<li>&nbsp;|&nbsp;</li>
 			<li><a href="#introduction" id="intro-nav">Introduction</a></li>
 			<li>&nbsp;|&nbsp;</li>
 			<li><a href="#tactics" id ="tactics-nav">Tactics</a></li>
@@ -41,13 +42,6 @@
 			</div>
 		</div>
 	</div>
-	<!-- >
-	Example of using an event handler and linking to a external js func.
-	<div class="container" id = "button-test">
-		<p class="button-able">Test Text Here</p>
-		<button onclick="changeColor()">Test Button Here</button>
-	</div>
-	-->
 	<div class="container" id = "title-frame-for-d3">
 		<div class = "row">
 			<h3>Tactics</h3>
@@ -59,22 +53,20 @@
 	<div class="container" id = "frame-the-d3-container">
 		<div class = "row">
 			<p>Let's compare which players England selected for the 2020 Euro Cup Final vs. Italy to the lineup and formation that our group thinks would give them the best chance of winning!</p>
+			<p>Click between formations to see which players we recommend and where we think they should play.</p>
 		</div>
 	</div>
 	<div class="container" id = "image-container">
 		<div class="row">
 			<div class="col-lg-6">
 				<h5 style = "color:#EA1F29">3-4-2-1</h5>
-				<!--
-				<p>This is how England at Euro 2020 Final. Starting with 3 defenders at the back can underpin an aggressively offensive strategy, but England's personnel included an equal number of defenders and attacking players. This resulted in a rather rigid gameplan that produced few promising attack chances -- save for an almost immediate goal in the second minute, courtesy of Luke Shaw.</p>
-				-->	
-				<input type="image" src="https://raw.githubusercontent.com/timschott/footy-viz/main/extra/3-4-2-1.png" style="opacity: 0.6;" onclick="default_lineup()"  onmouseout="this.style.opacity=0.6;" onmouseover="this.style.opacity=1;" class="img-fluid">
 				<p>England's usual lineup.</p>
+				<input type="image" src="https://raw.githubusercontent.com/timschott/footy-viz/main/extra/3-4-2-1.png" style="opacity: 0.6;" onclick="default_lineup()"  onmouseout="this.style.opacity=0.6;" onmouseover="this.style.opacity=1;" class="img-fluid">
 			</div>
 			<div class="col-lg-6">
 				<h5 style = "color:#2B57AC">4-2-3-1</h5>
-				<input type="image" src="https://raw.githubusercontent.com/timschott/footy-viz/main/extra/4-2-3-1.png" style="opacity: 0.6;" onclick="new_lineup()"  onmouseout="this.style.opacity=0.6;" onmouseover="this.style.opacity=1;" class="img-fluid">
 				<p>How England <i>should</i> play.</p>
+				<input type="image" src="https://raw.githubusercontent.com/timschott/footy-viz/main/extra/4-2-3-1.png" style="opacity: 0.6;" onclick="new_lineup()"  onmouseout="this.style.opacity=0.6;" onmouseover="this.style.opacity=1;" class="img-fluid">
 			</div>
 		</div>	
 	</div>

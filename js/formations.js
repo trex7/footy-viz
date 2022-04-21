@@ -165,12 +165,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 .attr("cy", function(d) { return d.y; })
                 .style("fill", function(d) { return color(d.team); })
                 .style("stroke", function(d) { return color1(d.team); })
-            .append("text")
-            .attr("name", function(d) {return d.name})
-            .attr("opacity", "1") 
-            .style("fill", "white")
+            // .append("text")
+            // .attr("name", function(d) {return d.name})
+            // .attr("opacity", "1") 
+            // .style("fill", "white")
+            // make dot bigger on mouseover
+            .on('mouseover', function (d, i) {
+                d3.select(this).transition()
+                     .duration('100')
+                     .attr("r", 16);
+           })
+           .on('mouseout', function (d, i) {
+                d3.select(this).transition()
+                     .duration('200')
+                     .attr("r", 14);
+           })
             .call(drag)
-
             });
         }
     // initializes the background
@@ -191,7 +201,7 @@ function default_lineup(){
 
     document.getElementById('tactics-title').innerHTML = '3-4-2-1';
     document.getElementById('tactics-title').style.color = '#EA1F29';
-    document.getElementById('tactics-explainer').innerHTML = 'This formation is relatively conservative, especially given the personnel choices on defense. England scored a goal 2 minutes after kickoff, but managed just 1 shot on target the rest of the match. Trent-Alexander Arnold did not play, while Mason Mount and Harry Kane performed poorly.';
+    document.getElementById('tactics-explainer').innerHTML = "England's usual formation, which lost them the Euro 2020 Finals match. England scored a goal 2 minutes after kickoff, but managed just 1 shot on target the rest of the match. Trent-Alexander Arnold did not play, while Mason Mount and Harry Kane performed poorly. This formation is relatively conservative, especially given the personnel choices on defense.";
 }
 
 function new_lineup(){
@@ -205,5 +215,5 @@ function new_lineup(){
 
     document.getElementById('tactics-title').innerHTML = '4-2-3-1';
     document.getElementById('tactics-title').style.color = '#2B57AC';
-    document.getElementById('tactics-explainer').innerHTML = 'This formation would allow England to attack aggressively and maintain a higher average field position. It would also play to the strengths of Trent Alexander-Arnold, whose absence in the Euro 2020 Final was sorely missed; his passing ability can unlock oppositions, evidenced by his incredible assist record.';
+    document.getElementById('tactics-explainer').innerHTML = "This formation would allow England to attack aggressively and maintain a higher average field position. It would also play to the strengths of Trent Alexander-Arnold, whose absence in the Euro 2020 Final was sorely missed; his passing ability can unlock oppositions, evidenced by his incredible assist record.";
 }

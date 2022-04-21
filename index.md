@@ -9,7 +9,7 @@
 	<div class="nav-links">
 		<ul class="nav-menu" id="nav-menu">
 			<li><a href="#introduction" id="intro-nav">Introduction</a></li>
-			<li><a href="#tactics" id ="tactics=nav">Tactics</a></li>
+			<li><a href="#tactics" id ="tactics-nav">Tactics</a></li>
 		</ul>
 	</div>
 </header>

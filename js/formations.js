@@ -1,4 +1,5 @@
-var holder = d3.select("#positions-board") // select the 'body' element
+document.addEventListener("DOMContentLoaded", function(event) { 
+    var holder = d3.select("#positions-board") // select the 'body' element
     .append("svg")           // append an SVG element to the body
     .attr("width", 1000)      
     .attr("height", 500);  
@@ -191,3 +192,5 @@ function new_lineup(){
             .attr("cy", function(d) { return d.y; });
     });
 }
+
+});

@@ -247,6 +247,7 @@ function new_lineup(){
             .attr("cy", function(d) { return d.y; })
             .attr("name", function(d) {return d.name})
             .style("fill", function(d) {
+                console.log(d.name);
                 if (d.name == "Kane" || d.name == "Mount" || d.name == "Alexander-Arnold") {
                     return "#EA1F29"
                 } else {

@@ -1,3 +1,5 @@
+console.log("im in the js");
+
 var holder = d3.select("#positions-board") // select the 'body' element
       .append("svg")           // append an SVG element to the body
       .attr("width", 1000)      

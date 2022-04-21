@@ -167,9 +167,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
             .attr("r", 14)
             .attr("cx", function(d) { return d.x; })
             .attr("cy", function(d) { return d.y; })
-            .style("fill", function(d) { return color(d.team); })
             .style("stroke", function(d) { return color1(d.team); })
             .attr("name", function(d) {return d.name})
+            // highlight kane and mount
+            .style("fill", function(d) {
+                 if (d.name == "Kane" || d.name == "Mount") {
+                     return "#EA1F29"
+                 } else {
+                     return color(d.team);
+                 }
+            })
 
             .on('mouseover', function (d, i) {
                 // increase size
@@ -216,7 +223,14 @@ function default_lineup(){
             .duration(1000)
             .attr("cx", function(d) { return d.x; })
             .attr("cy", function(d) { return d.y; })
-            .attr("name", function(d) {return d.name});
+            .attr("name", function(d) {return d.name})
+            .style("fill", function(d) {
+                if (d.name == "Kane" || d.name == "Mount") {
+                    return "#EA1F29"
+                } else {
+                    return color(d.team);
+                }
+           });
     });
 
     document.getElementById('tactics-title').innerHTML = '3-4-2-1';
@@ -231,7 +245,14 @@ function new_lineup(){
             .duration(1000)
             .attr("cx", function(d) { return d.x; })
             .attr("cy", function(d) { return d.y; })
-            .attr("name", function(d) {return d.name});
+            .attr("name", function(d) {return d.name})
+            .style("fill", function(d) {
+                if (d.name == "Kane" || d.name == "Mount" || d.name == "Alexander-Arnold") {
+                    return "#EA1F29"
+                } else {
+                    return color(d.team);
+                }
+           });
         });
 
     document.getElementById('tactics-title').innerHTML = '4-2-3-1';

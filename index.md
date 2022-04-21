@@ -30,13 +30,13 @@
 	<div class="container" id = "card-container">
 		<div class = "row">
 			<div class="col-lg-4" id ="kane-card">
-				<img src="extra/kane_playing_card.png" alt="Harry Kane playing card">
+				<img src="extra/kane_playing_card.png" alt="Harry Kane playing card" class="img-responsive">
 			</div>
 			<div class="col-lg-4" id ="mount-card">
-				<img src="extra/mount_playing_card.png" alt="Mason Mount playing card">
+				<img src="extra/mount_playing_card.png" alt="Mason Mount playing card" class="img-responsive">
 			</div>
 			<div class="col-lg-4" id ="trent-card">
-				<img src="extra/trent_playing_card.png" alt="Trent Alexander-Arnold playing card">
+				<img src="extra/trent_playing_card.png" alt="Trent Alexander-Arnold playing card" class="img-responsive">
 			</div>
 		</div>
 	</div>

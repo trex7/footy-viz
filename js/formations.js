@@ -1,4 +1,4 @@
-var holder = d3.select("#area2") // select the 'body' element
+var holder = d3.select("#positions-board") // select the 'body' element
       .append("svg")           // append an SVG element to the body
       .attr("width", 1000)      
       .attr("height", 500);  
@@ -126,7 +126,9 @@ var drag = d3.behavior.drag()
     .on("dragend", dragended);
 
 function default1(){
-    d3.csv("../data/dots.csv", dottype, function(error, dots) {
+    // controls default behavior
+    // so, by default, load England's starting lineup
+    d3.csv("../data/3_4_2_1.csv", dottype, function(error, dots) {
         dot = holder.append("g")
         .selectAll(".circle_players")
             .data(dots)

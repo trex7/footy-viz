@@ -59,4 +59,8 @@
 			</div>
 		</div>	
 	</div>
+	<div class="container" id="positions-container">
+		<div class="row" id = "positions-board">
+		</div>
+	</div>
 </body>

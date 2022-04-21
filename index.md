@@ -50,7 +50,7 @@
 				<!--
 				<p>This is how England at Euro 2020 Final. Starting with 3 defenders at the back can underpin an aggressively offensive strategy, but England's personnel included an equal number of defenders and attacking players. This resulted in a rather rigid gameplan that produced few promising attack chances -- save for an almost immediate goal in the second minute, courtesy of Luke Shaw.</p>
 				-->	
-				<input type="image" src="extra/default-tactics-boards.png" style="opacity: 0.6;" onclick="default_lineup()"  onmouseout="this.style.opacity=0.6;" onmouseover="this.style.opacity=1;"/>
+				<input type="image" src="extra/default-tactics-board.png" style="opacity: 0.6;" onclick="default_lineup()"  onmouseout="this.style.opacity=0.6;" onmouseover="this.style.opacity=1;"/>
 				<p>England's formation for the Euro 2020 Finals match...where they lost to Italy.</p>
 			</div>
 			<div class="col">

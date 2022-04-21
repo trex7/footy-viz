@@ -128,7 +128,7 @@ var drag = d3.behavior.drag()
 function default1(){
     // controls default behavior
     // so, by default, load England's starting lineup
-    d3.csv("../extra/3_4_2_1.csv", dottype, function(error, dots) {
+    d3.csv("https://raw.githubusercontent.com/timschott/footy-viz/main/extra/3_4_2_1.csv", dottype, function(error, dots) {
         dot = holder.append("g")
         .selectAll(".circle_players")
             .data(dots)
@@ -172,7 +172,7 @@ function dragended(d) {
 
 //todo: add display for player names, especially defense.
 function default_lineup(){
-    d3.csv("../extra/3_4_2_1.csv", dottype, function(error, dots) {
+    d3.csv("https://raw.githubusercontent.com/timschott/footy-viz/main/extra/3_4_2_1.csv", dottype, function(error, dots) {
       var dot = d3.selectAll(".circle_players").data(dots)
             .transition()
             .duration(1000)
@@ -182,7 +182,7 @@ function default_lineup(){
 }
 
 function new_lineup(){
-    d3.csv("../extra/4_2_3_1.csv", dottype, function(error, dots) {
+    d3.csv("https://raw.githubusercontent.com/timschott/footy-viz/main/extra/4_2_3_1.csv", dottype, function(error, dots) {
       var dot = d3.selectAll(".circle_players").data(dots)
             .transition()
             .duration(1000)

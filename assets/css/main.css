@@ -11,3 +11,7 @@ body {
 #title-container {
 	margin-top: 2rem;
 }
+
+.nav-menu li {
+	display: inline;
+}

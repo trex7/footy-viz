@@ -1,16 +1,23 @@
 <script src="js/test.js"></script>
 <script src="js/formations.js"></script>
 <header class="page-header" role="banner">
-	<div class="top-page">
+	<div class="intro-to-page">
 		<h1 class="project-tagline">England's Soccer Superstars</h1>
 		<h2 class="project-tagline">Advait Lad, Akshar Dhondiyal, Tim Schott | Info Viz Spring 2022 UC Berkeley</h2>
 		<a href="https://github.com/timschott/footy-viz" class="btn">View on GitHub</a>
+	</div>
+	<div class="nav-links">
+		<ul class="nav-menu">
+			<li><a href="#introduction">Introduction</a></li>
+			<li><a href="#tactics">Tactics</a></li>
+		</ul>
+    </div>
 	</div>
 </header>
 <body>
 	<div class="container" id = "title-container">
 		<div class="row">
-			<h3>Introduction: Analyzing England Soccer Superstars</h3>
+			<h3>Introduction</h3>
 		</div>
 	</div>
 	<div class="container" id = "intro-container">
@@ -42,12 +49,13 @@
 	-->
 	<div class="mt-2 container" id = "title-frame-for-d3">
 		<div class = "row">
-			<h3>England's Tactics: Our Recommendation</h3>
+			<h3>Tactics</h3>
+			<h4>What's the best strategy for England's players?</h4>
 		</div>
 	</div>
 	<div class="container" id = "frame-the-d3-container">
 		<div class = "row">
-			<p>Let's compare how they selected and arranged their team formation in the 2020 Euro Cup Final vs. Italy to the lineup that our group thinks would give them the best chance of winning!</p>
+			<p>Let's compare which players England selected for the 2020 Euro Cup Final vs. Italy to the lineup and formation that our group thinks would give them the best chance of winning!</p>
 		</div>
 	</div>
 	<div class="container" id = "image-container">

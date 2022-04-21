@@ -9,6 +9,20 @@
 		<div class = "row">
 			<p>Although the English men's soccer team is one of the oldest national teams in the world, they’ve only won a single major tournament: the 1966 World Cup.</p>
 			<p>Can they win this year's World Cup?</p>
+			<p>We'll analyze their squad through a few different perspectives, focusing on 3 key players:</p>
+		</div>
+	</div>
+	<div class="container" id = "card-container">
+		<div class = "row">
+			<div class="col" id ="kane-card">
+				<img src="extra/kane_playing_card.png" alt="Harry Kane playing card">
+			</div>
+			<div class="col" id ="mount-card">
+				<img src="extra/mount_playing_card.png" alt="Mason Mount playing card">
+			</div>
+			<div class="col" id ="trent-card">
+				<img src="extra/trent_playing_card.png" alt="Trent Alexander-Arnold playing card">
+			</div>
 		</div>
 	</div>
 	<!-- >
@@ -18,17 +32,6 @@
 		<button onclick="changeColor()">Test Button Here</button>
 	</div>
 	-->
-	<!-- First use of a bootstrap layout below -->
-	<div class="container" id = "starting-container">
-		<div class="row">
-			<div class="col">
-				<p>First column</p>
-			</div>
-			<div class="col">
-				<p>Second column</p>
-			</div>
-		</div>	
-	</div>
 	<div class="container" id = "title-frame-for-d3">
 		<div class = "row">
 			<h3>England's Tactics: Our Recommendation</h3>

@@ -55,12 +55,10 @@
 			</div>
 			<div class="col">
 				<h5>4-2-3-1</h5>
+				<input type="image" src="https://raw.githubusercontent.com/timschott/footy-viz/main/extra/default-tactics-board.png" style="opacity: 0.6;" onclick="new_lineup()"  onmouseout="this.style.opacity=0.6;" onmouseover="this.style.opacity=1;"/>
 				<p>How England <i>should</i> play.</p>
 			</div>
 		</div>	
 	</div>
-	<div class="container" id="positions-container">
-		<div class="row" id = "positions-board">
-		</div>
-	</div>
+	<div class="container" id="positions-board"></div>
 </body>

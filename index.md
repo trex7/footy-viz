@@ -2,7 +2,7 @@
 <script src="js/formations.js"></script>
 <header class="page-header" role="banner">
 	<div class="top-page">
-		<h2 class="project-tagline">England's Soccer Superstars"></h2>
+		<h1 class="project-tagline">England's Soccer Superstars</h1>
 		<h2 class="project-tagline">Advait Lad, Akshar Dhondiyal, Tim Schott | Info Viz Spring 2022 UC Berkeley</h2>
 		<a href="https://github.com/timschott/footy-viz" class="btn">View on GitHub</a>
 	</div>
@@ -10,7 +10,7 @@
 <body>
 	<div class="container" id = "title-container">
 		<div class="row">
-			<h3>Analyzing England Soccer Superstars</h3>
+			<h3>Introduction: Analyzing England Soccer Superstars</h3>
 		</div>
 	</div>
 	<div class="container" id = "intro-container">

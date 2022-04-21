@@ -7,3 +7,7 @@
 body {
 	background: #E1EFF5;
 }
+
+#title-container {
+	margin-top: 2rem;
+}

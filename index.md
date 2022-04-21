@@ -52,8 +52,9 @@
 	</div>
 	<div class="container" id = "frame-the-d3-container">
 		<div class = "row">
-			<p>Let's compare which players England selected for the 2020 Euro Cup Final vs. Italy to the lineup and formation that our group thinks would give them the best chance of winning!</p>
-			<p>Click between formations to see which players we recommend and where we think they should play.</p>
+			<p>Let's compare the players England selected for the 2020 Euro Cup Final against Italy to the lineup that our group thinks would give them the best chance of winning!</p>
+			<p>Click between formations to see how think they should play.</p>
+			<p>We've highlighted the positions of our 3 key players.</p>
 		</div>
 	</div>
 	<div class="container" id = "image-container">

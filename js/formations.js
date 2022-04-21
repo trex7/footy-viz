@@ -235,7 +235,7 @@ function default_lineup(){
 
     document.getElementById('tactics-title').innerHTML = '3-4-2-1';
     document.getElementById('tactics-title').style.color = '#EA1F29';
-    document.getElementById('tactics-explainer').innerHTML = "England's usual formation, which lost them the Euro 2020 Finals match. England scored a goal 2 minutes after kickoff, but managed just 1 shot on target the rest of the match. Trent-Alexander Arnold did not play, while Mason Mount and Harry Kane performed poorly. This formation is relatively conservative.";
+    document.getElementById('tactics-explainer').innerHTML = "England's usual formation, which lost them the Euro 2020 Finals match. England scored a goal 2 minutes after kickoff, but managed just 1 shot on target the rest of the match. Trent-Alexander Arnold did not play, while Mason Mount and Harry Kane (highlighted in <span id ='red-span'>red</span>) performed poorly. This formation is relatively conservative, especially given the players England used -- they fielded a team with 5 defenders instead of the usual 4. Their outside defenders (Shaw and Walker) were tasked with shutting down wide options for Italy. This left England with scant attacking options when they received the ball.";
 }
 
 function new_lineup(){
@@ -251,12 +251,12 @@ function new_lineup(){
                 if (d.name == "Kane" || d.name == "Mount" || d.name == "Alexander-Arnold") {
                     return "#EA1F29"
                 } else {
-                    return "#14283C";
+                    return "#2B57AC";
                 }
            });
         });
 
     document.getElementById('tactics-title').innerHTML = '4-2-3-1';
     document.getElementById('tactics-title').style.color = '#2B57AC';
-    document.getElementById('tactics-explainer').innerHTML = "This formation would allow England to attack aggressively and maintain a higher average field position. It would also play to the strengths of Trent Alexander-Arnold, whose absence in the Euro 2020 Final was sorely missed; his passing ability can unlock oppositions, evidenced by his incredible assist record.";
+    document.getElementById('tactics-explainer').innerHTML = "This formation would allow England to attack aggressively and maintain a higher average field position. It would also play to the strengths of our key players, highlighted in <span id ='blue-span'>blue</span>. Trent Alexander-Arnold, whose absence in the Euro 2020 Final was sorely missed, can unlock oppositions with incredible passes. Allowing him to occupy the right channel plays to his strengths. Meanwhile, Mount shifts to a directly central role in the midfield right behind Kane. This provides him with more chances to shoot and also an easy way to interchange alongside Kane and the rest of the midfield.";
 }

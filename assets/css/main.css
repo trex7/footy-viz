@@ -35,6 +35,14 @@ body {
 	color: #EA1F29
 }
 
+#red-span {
+	color: #EA1F29
+}
+
+#blue-span {
+	color: #2B57AC
+}
+
 div.tooltip {
 	position: absolute;
 	text-align: center;

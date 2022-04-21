@@ -3,6 +3,6 @@
   height: 100%;
 }
 
-div[bg="light-blue"] {
+#light-blue {
 	background: #E1EFF5;
 }

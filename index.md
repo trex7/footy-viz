@@ -64,7 +64,7 @@
 	<div class="container" id = "image-container">
 		<div class="row">
 			<div class="col-lg-6">
-				<h5 color="#EA1F29">3-4-2-1</h5>
+				<h5 style = "color:#EA1F29">3-4-2-1</h5>
 				<!--
 				<p>This is how England at Euro 2020 Final. Starting with 3 defenders at the back can underpin an aggressively offensive strategy, but England's personnel included an equal number of defenders and attacking players. This resulted in a rather rigid gameplan that produced few promising attack chances -- save for an almost immediate goal in the second minute, courtesy of Luke Shaw.</p>
 				-->	
@@ -72,7 +72,7 @@
 				<p>England's usual lineup.</p>
 			</div>
 			<div class="col-lg-6">
-				<h5 color="#2B57AC">4-2-3-1</h5>
+				<h5 style = "color:#2B57AC">4-2-3-1</h5>
 				<input type="image" src="https://raw.githubusercontent.com/timschott/footy-viz/main/extra/4-2-3-1.png" style="opacity: 0.6;" onclick="new_lineup()"  onmouseout="this.style.opacity=0.6;" onmouseover="this.style.opacity=1;" class="img-fluid">
 				<p>How England <i>should</i> play.</p>
 			</div>

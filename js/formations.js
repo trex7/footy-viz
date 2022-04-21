@@ -1,5 +1,7 @@
 console.log("im in the js");
 
+function setup() {
+
 var holder = d3.select("#positions-board") // select the 'body' element
       .append("svg")           // append an SVG element to the body
       .attr("width", 1000)      
@@ -127,28 +129,23 @@ var drag = d3
     .on('drag', dragged)
     .on('end', dragended)
 
-function default1(){
-    console.log("im getting invoked by default!");
-    // controls default behavior
-    // so, by default, load England's starting lineup
-    d3.csv("https://raw.githubusercontent.com/timschott/footy-viz/main/extra/3_4_2_1.csv", dottype, function(error, dots) {
-        dot = holder.append("g")
-        .selectAll(".circle_players")
-            .data(dots)
-        .enter().append("circle")
-        .attr("class", "circle_players")
-            .attr("r", 14)
-            .attr("cx", function(d) { return d.x; })
-            .attr("cy", function(d) { return d.y; })
-            .style("fill", function(d) { return color(d.team); })
-            .style("stroke", function(d) { return color1(d.team); })
-            .call(drag);  
-    });
+d3.csv("https://raw.githubusercontent.com/timschott/footy-viz/main/extra/3_4_2_1.csv", dottype, function(error, dots) {
+    dot = holder.append("g")
+    .selectAll(".circle_players")
+        .data(dots)
+    .enter().append("circle")
+    .attr("class", "circle_players")
+        .attr("r", 14)
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; })
+        .style("fill", function(d) { return color(d.team); })
+        .style("stroke", function(d) { return color1(d.team); })
+        .call(drag);  
+});
 }
 
 // empty constructor, essentially, that initializes the background
-console.log("im still in the js");
-default1();
+setup();
 
 // helper functions
 function dottype(d) {

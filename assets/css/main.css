@@ -15,3 +15,16 @@ body {
 .nav-menu li {
 	display: inline;
 }
+
+#nav-menu {
+	display: inline-block;
+    margin-bottom: 1rem;
+}
+
+#intro-nav {
+	color: #f7fbff;
+}
+
+#tactics-nav {
+	color: #f7fbff;
+}

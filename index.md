@@ -7,11 +7,10 @@
 		<a href="https://github.com/timschott/footy-viz" class="btn">View on GitHub</a>
 	</div>
 	<div class="nav-links">
-		<ul class="nav-menu">
-			<li><a href="#introduction">Introduction</a></li>
-			<li><a href="#tactics">Tactics</a></li>
+		<ul class="nav-menu" id="nav-menu">
+			<li><a href="#introduction" id="intro-nav">Introduction</a></li>
+			<li><a href="#tactics" id ="tactics=nav">Tactics</a></li>
 		</ul>
-    </div>
 	</div>
 </header>
 <body>

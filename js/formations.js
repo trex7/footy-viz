@@ -128,6 +128,7 @@ var drag = d3
     .on('end', dragended)
 
 function default1(){
+    console.log("im getting invoked by default!");
     // controls default behavior
     // so, by default, load England's starting lineup
     d3.csv("https://raw.githubusercontent.com/timschott/footy-viz/main/extra/3_4_2_1.csv", dottype, function(error, dots) {
@@ -146,6 +147,7 @@ function default1(){
 }
 
 // empty constructor, essentially, that initializes the background
+console.log("im still in the js");
 default1();
 
 // helper functions

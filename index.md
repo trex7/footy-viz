@@ -30,13 +30,13 @@
 	<div class="container" id = "card-container">
 		<div class = "row">
 			<div class="col-lg-4" id ="kane-card">
-				<img src="extra/kane_playing_card.png" alt="Harry Kane playing card" class="img-responsive">
+				<img src="extra/kane_playing_card.png" alt="Harry Kane playing card" class="img-fluid">
 			</div>
 			<div class="col-lg-4" id ="mount-card">
-				<img src="extra/mount_playing_card.png" alt="Mason Mount playing card" class="img-responsive">
+				<img src="extra/mount_playing_card.png" alt="Mason Mount playing card" class="img-fluid">
 			</div>
 			<div class="col-lg-4" id ="trent-card">
-				<img src="extra/trent_playing_card.png" alt="Trent Alexander-Arnold playing card" class="img-responsive">
+				<img src="extra/trent_playing_card.png" alt="Trent Alexander-Arnold playing card" class="img-fluid">
 			</div>
 		</div>
 	</div>
@@ -65,12 +65,12 @@
 				<!--
 				<p>This is how England at Euro 2020 Final. Starting with 3 defenders at the back can underpin an aggressively offensive strategy, but England's personnel included an equal number of defenders and attacking players. This resulted in a rather rigid gameplan that produced few promising attack chances -- save for an almost immediate goal in the second minute, courtesy of Luke Shaw.</p>
 				-->	
-				<input type="image" src="https://raw.githubusercontent.com/timschott/footy-viz/main/extra/default-tactics-board-sm.png" style="opacity: 0.6;" onclick="default_lineup()"  onmouseout="this.style.opacity=0.6;" onmouseover="this.style.opacity=1;">
+				<input type="image" src="https://raw.githubusercontent.com/timschott/footy-viz/main/extra/default-tactics-board-sm.png" style="opacity: 0.6;" onclick="default_lineup()"  onmouseout="this.style.opacity=0.6;" onmouseover="this.style.opacity=1;" class="img-fluid">
 				<p>England's formation for the Euro 2020 Finals match...where they lost to Italy.</p>
 			</div>
 			<div class="col-lg-6">
 				<h5>4-2-3-1</h5>
-				<input type="image" src="https://raw.githubusercontent.com/timschott/footy-viz/main/extra/default-tactics-board-sm.png" style="opacity: 0.6;" onclick="new_lineup()"  onmouseout="this.style.opacity=0.6;" onmouseover="this.style.opacity=1;">
+				<input type="image" src="https://raw.githubusercontent.com/timschott/footy-viz/main/extra/default-tactics-board-sm.png" style="opacity: 0.6;" onclick="new_lineup()"  onmouseout="this.style.opacity=0.6;" onmouseover="this.style.opacity=1;" class="img-fluid">
 				<p>How England <i>should</i> play.</p>
 			</div>
 		</div>	

@@ -1,5 +1,6 @@
 <script src="js/test.js"></script>
 <script src="js/formations.js"></script>
+<title>Footy Viz</title>
 <header class="page-header" role="banner">
 	<div class="intro-to-page">
 		<h1 class="project-tagline">England's Soccer Superstars</h1>
@@ -52,7 +53,7 @@
 			<h3>Tactics</h3>
 		</div>
 		<div class = "row">
-			<h3>What's England's best strategy?</h3>
+			<h5>What's England's best strategy?</h5>
 		</div>
 	</div>
 	<div class="container" id = "frame-the-d3-container">
@@ -78,8 +79,8 @@
 		</div>	
 	</div>
 	<div class="container" id="positions-board-title">
-		<h3>This is a <span class="tactics-title">3-4-2-1</span> formation.</h3>
-		<p class="tactics-explainer">This formation is relatively conservative, especially given the personnel choices on defense. England scored a goal 2 minutes after kickoff, but managed just 1 shot on target the rest of the match. Trent-Alexander Arnold did not play, while Mason Mount and Harry Kane performed poorly.</p>
+		<h5><span id="tactics-title">3-4-2-1</span> formation.</h5>
+		<p id="tactics-explainer">This formation is relatively conservative, especially given the personnel choices on defense. England scored a goal 2 minutes after kickoff, but managed just 1 shot on target the rest of the match. Trent-Alexander Arnold did not play, while Mason Mount and Harry Kane performed poorly.</p>
 	</div>
 	<div class="container" id="positions-board">
 	</div>

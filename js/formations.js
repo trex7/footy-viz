@@ -189,7 +189,7 @@ function default_lineup(){
             .attr("cy", function(d) { return d.y; });
     });
 
-    document.getElementById('tactics-title').getElementsByTagName('span')[0].innerHTML = '3-4-2-1';
+    document.getElementById('tactics-title').innerHTML = '3-4-2-1';
     document.getElementById('tactics-explainer').innerHTML = 'This formation is relatively conservative, especially given the personnel choices on defense. England scored a goal 2 minutes after kickoff, but managed just 1 shot on target the rest of the match. Trent-Alexander Arnold did not play, while Mason Mount and Harry Kane performed poorly.';
 }
 
@@ -202,6 +202,6 @@ function new_lineup(){
             .attr("cy", function(d) { return d.y; });
     });
 
-    document.getElementById('tactics-title').getElementsByTagName('span')[0].innerHTML = '4-2-3-1';
+    document.getElementById('tactics-title').innerHTML = '4-2-3-1';
     document.getElementById('tactics-explainer').innerHTML = 'This formation would allow England to attack aggressively and maintain a higher average field position. It would also play to the strengths of Trent Alexander-Arnold, whose absence in the Euro 2020 Final was sorely missed; his passing ability can unlock oppositions, evidenced by his incredible assist record.';
 }

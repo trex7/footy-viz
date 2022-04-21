@@ -170,6 +170,9 @@ function default_setup () {
 // empty constructor, essentially, that initializes the background
 default_setup();
 
+});
+
+
 //todo: add display for player names, especially defense.
 function default_lineup(){
     console.log("I just called default lineup!");
@@ -192,5 +195,3 @@ function new_lineup(){
             .attr("cy", function(d) { return d.y; });
     });
 }
-
-});

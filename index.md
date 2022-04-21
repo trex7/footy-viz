@@ -48,7 +48,7 @@
 		<button onclick="changeColor()">Test Button Here</button>
 	</div>
 	-->
-	<div class="mt-2 container" id = "title-frame-for-d3">
+	<div class="container" id = "title-frame-for-d3">
 		<div class = "row">
 			<h3>Tactics</h3>
 		</div>
@@ -64,15 +64,15 @@
 	<div class="container" id = "image-container">
 		<div class="row">
 			<div class="col-lg-6">
-				<h5>3-4-2-1</h5>
+				<h5 color="#EA1F29">3-4-2-1</h5>
 				<!--
 				<p>This is how England at Euro 2020 Final. Starting with 3 defenders at the back can underpin an aggressively offensive strategy, but England's personnel included an equal number of defenders and attacking players. This resulted in a rather rigid gameplan that produced few promising attack chances -- save for an almost immediate goal in the second minute, courtesy of Luke Shaw.</p>
 				-->	
 				<input type="image" src="https://raw.githubusercontent.com/timschott/footy-viz/main/extra/3-4-2-1.png" style="opacity: 0.6;" onclick="default_lineup()"  onmouseout="this.style.opacity=0.6;" onmouseover="this.style.opacity=1;" class="img-fluid">
-				<p>England's formation for the Euro 2020 Finals match...where they lost to Italy.</p>
+				<p>England's usual lineup.</p>
 			</div>
 			<div class="col-lg-6">
-				<h5>4-2-3-1</h5>
+				<h5 color="#2B57AC">4-2-3-1</h5>
 				<input type="image" src="https://raw.githubusercontent.com/timschott/footy-viz/main/extra/4-2-3-1.png" style="opacity: 0.6;" onclick="new_lineup()"  onmouseout="this.style.opacity=0.6;" onmouseover="this.style.opacity=1;" class="img-fluid">
 				<p>How England <i>should</i> play.</p>
 			</div>
@@ -80,7 +80,7 @@
 	</div>
 	<div class="container" id="positions-board-title">
 		<h5><span id="tactics-title">3-4-2-1</span> formation.</h5>
-		<p id="tactics-explainer">This formation is relatively conservative, especially given the personnel choices on defense. England scored a goal 2 minutes after kickoff, but managed just 1 shot on target the rest of the match. Trent-Alexander Arnold did not play, while Mason Mount and Harry Kane performed poorly.</p>
+		<p id="tactics-explainer">England's usual formation, which lost them the Euro 2020 Finals match. England scored a goal 2 minutes after kickoff, but managed just 1 shot on target the rest of the match. Trent-Alexander Arnold did not play, while Mason Mount and Harry Kane performed poorly. This formation is relatively conservative, especially given the personnel choices on defense.</p>
 	</div>
 	<div class="container" id="positions-board">
 	</div>

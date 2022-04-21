@@ -160,25 +160,39 @@ document.addEventListener("DOMContentLoaded", function(event) {
             .enter()
             .append("circle")
             .attr("class", "circle_players")
-                .attr("r", 14)
-                .attr("cx", function(d) { return d.x; })
-                .attr("cy", function(d) { return d.y; })
-                .style("fill", function(d) { return color(d.team); })
-                .style("stroke", function(d) { return color1(d.team); })
-            // .append("text")
-            // .attr("name", function(d) {return d.name})
-            // .attr("opacity", "1") 
-            // .style("fill", "white")
-            // make dot bigger on mouseover
+            .attr("r", 14)
+            .attr("cx", function(d) { return d.x; })
+            .attr("cy", function(d) { return d.y; })
+            .style("fill", function(d) { return color(d.team); })
+            .style("stroke", function(d) { return color1(d.team); })
+            .attr("name", function(d) {return d.name})
+
             .on('mouseover', function (d, i) {
+                // increase size
                 d3.select(this).transition()
                      .duration('100')
-                     .attr("r", 16);
+                     .attr("r", 18);
+                
+                // tooltip
+                div.transition()
+                    .duration(100)
+                    .style("opacity", 1);
+                
+                // player name
+                div.html(d.name)
+                    .style("left", (d3.event.pageX + 10) + "px")
+                    .style("top", (d3.event.pageY - 15) + "px");
            })
            .on('mouseout', function (d, i) {
+                // decrease size
                 d3.select(this).transition()
                      .duration('200')
                      .attr("r", 14);
+
+                //makes tooltip disappear
+                div.transition()
+                    .duration('200')
+                    .style("opacity", 0);
            })
             .call(drag)
             });
@@ -196,12 +210,13 @@ function default_lineup(){
             .transition()
             .duration(1000)
             .attr("cx", function(d) { return d.x; })
-            .attr("cy", function(d) { return d.y; });
+            .attr("cy", function(d) { return d.y; })
+            .attr("name", function(d) {return d.name});
     });
 
     document.getElementById('tactics-title').innerHTML = '3-4-2-1';
     document.getElementById('tactics-title').style.color = '#EA1F29';
-    document.getElementById('tactics-explainer').innerHTML = "England's usual formation, which lost them the Euro 2020 Finals match. England scored a goal 2 minutes after kickoff, but managed just 1 shot on target the rest of the match. Trent-Alexander Arnold did not play, while Mason Mount and Harry Kane performed poorly. This formation is relatively conservative, especially given the personnel choices on defense.";
+    document.getElementById('tactics-explainer').innerHTML = "England's usual formation, which lost them the Euro 2020 Finals match. England scored a goal 2 minutes after kickoff, but managed just 1 shot on target the rest of the match. Trent-Alexander Arnold did not play, while Mason Mount and Harry Kane performed poorly. This formation is relatively conservative.";
 }
 
 function new_lineup(){
@@ -210,8 +225,9 @@ function new_lineup(){
             .transition()
             .duration(1000)
             .attr("cx", function(d) { return d.x; })
-            .attr("cy", function(d) { return d.y; });
-    });
+            .attr("cy", function(d) { return d.y; })
+            .attr("name", function(d) {return d.name});
+        });
 
     document.getElementById('tactics-title').innerHTML = '4-2-3-1';
     document.getElementById('tactics-title').style.color = '#2B57AC';

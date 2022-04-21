@@ -94,13 +94,13 @@ holder.append("circle")        // attach a circle
     .style("fill", "#ffffff");     // set the fill color
 
 // circles
-var arc = d3.svg.arc()
+var arc = d3.arc()
     .innerRadius(70)
     .outerRadius(75)
     .startAngle(0.75) //radians
     .endAngle(2.4) //just radians
     
-var arc2 = d3.svg.arc()
+var arc2 = d3.arc()
     .innerRadius(70)
     .outerRadius(75)
     .startAngle(-0.75) //radians

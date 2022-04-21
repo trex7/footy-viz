@@ -156,15 +156,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
             d3.csv("https://raw.githubusercontent.com/timschott/footy-viz/main/extra/3_4_2_1.csv", dottype, function(error, dots) {
             dot = holder.append("g")
             .selectAll(".circle_players")
-                .data(dots)
-            .enter().append("circle")
+            .data(dots)
+            .enter()
+            .append("circle")
             .attr("class", "circle_players")
                 .attr("r", 14)
                 .attr("cx", function(d) { return d.x; })
                 .attr("cy", function(d) { return d.y; })
                 .style("fill", function(d) { return color(d.team); })
                 .style("stroke", function(d) { return color1(d.team); })
-                .call(drag);  
+            .append("text")
+            .attr("name", function(d) {return d.name}) 
+            .call(drag)
+
             });
         }
     // initializes the background

@@ -116,8 +116,8 @@ holder.append("path")
     .attr("fill", "#ffffff")
     .attr("transform", "translate(880,250)");
 
-var color = d3.scale.ordinal().range(["#14293c", "pink"]);
-var color1 = d3.scale.ordinal().range(["#14293c", "red"]);
+var color = d3.scaleOrdinal().range(["#14293c", "pink"]);
+var color1 = d3.scaleOrdinal().range(["#14293c", "red"]);
 
 var drag = d3.behavior.drag()
     .origin(function(d) { return d; })

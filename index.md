@@ -9,7 +9,7 @@
 	</div>
 	<div class="nav-links">
 		<ul class="nav-menu" id="nav-menu">
-			<li>&nbsp;|&nbsp;</li>
+			<li>&nbsp;&nbsp;</li>
 			<li><a href="#introduction" id="intro-nav">Introduction</a></li>
 			<li>&nbsp;|&nbsp;</li>
 			<li><a href="#tactics" id ="tactics-nav">Tactics</a></li>
@@ -23,14 +23,14 @@
 		</div>
 	</div>
 	<div class="container" id = "intro-container">
-		<div class = "row">
+		<div class = "row form-group">
 			<p>Although the English men's soccer team is one of the oldest national teams in the world, they’ve only won a single major tournament: the 1966 World Cup.</p>
 			<p>Can they win this year's World Cup?</p>
 			<p>We'll analyze their squad through a few different perspectives, focusing on 3 key players:</p>
 		</div>
 	</div>
 	<div class="container" id = "card-container">
-		<div class = "row">
+		<div class = "row form-group">
 			<div class="col-lg-4" id ="kane-card">
 				<img src="extra/kane_playing_card.png" alt="Harry Kane playing card" class="img-fluid">
 			</div>
@@ -73,7 +73,7 @@
 	</div>
 	<div class="container" id="positions-board-title">
 		<h5><span id="tactics-title">3-4-2-1</span> formation.</h5>
-		<p id="tactics-explainer">England's usual formation, which lost them the Euro 2020 Finals match. England scored a goal 2 minutes after kickoff, but managed just 1 shot on target the rest of the match. Trent-Alexander Arnold did not play, while <span id ='red-span'>Mason Mount</span> and <span id ='red-span'>Harry Kane</span> (highlighted in <span id ='red-span'>red</span>) performed poorly. This formation is relatively conservative, especially given the players England used -- they fielded a team with 5 defenders instead of the usual 4. Their outside defenders (Shaw and Walker) were tasked with shutting down wide options for Italy. This left England with scant attacking options when they received the ball.</p>
+		<p id="tactics-explainer">England's usual formation, which lost them the Euro 2020 Finals match. England scored a goal 2 minutes after kickoff, but managed just 1 shot on target the rest of the match. Trent-Alexander Arnold did not play, while <span id ='red-span'>Mason Mount</span> and <span id ='red-span'>Harry Kane</span> (highlighted in <span id ='red-span'>red</span>) performed poorly. This formation is relatively conservative, especially given the players England used. They fielded a team with 5 defenders instead of the usual 4. Their outside defenders (Shaw and Trippier) were tasked with shutting down wide options for Italy. This left England with scant attacking options when they received the ball.</p>
 	</div>
 	<div class="container" id="positions-board">
 	</div>

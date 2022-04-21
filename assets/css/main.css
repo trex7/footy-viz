@@ -32,15 +32,17 @@ body {
 }
 
 #tactics-title {
-	color: #EA1F29
+	color: #EA1F29;
 }
 
 #red-span {
-	color: #EA1F29
+	color: #EA1F29;
+	font-weight: 700;
 }
 
 #blue-span {
-	color: #2B57AC
+	color: #2B57AC;
+	font-weight: 700;
 }
 
 div.tooltip {
@@ -54,3 +56,9 @@ div.tooltip {
 	pointer-events: none;
 	font-size: .7rem;
 }
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+  }

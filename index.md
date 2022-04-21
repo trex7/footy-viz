@@ -3,12 +3,13 @@
 <header class="page-header" role="banner">
 	<div class="intro-to-page">
 		<h1 class="project-tagline">England's Soccer Superstars</h1>
-		<h2 class="project-tagline">Advait Lad, Akshar Dhondiyal, Tim Schott | Info Viz Spring 2022 UC Berkeley</h2>
+		<h2 class="project-tagline">Advait Lad, Akshar Dhondiyal, Tim Schott &nbsp; Info Viz Spring 2022 UC Berkeley</h2>
 		<a href="https://github.com/timschott/footy-viz" class="btn">View on GitHub</a>
 	</div>
 	<div class="nav-links">
 		<ul class="nav-menu" id="nav-menu">
 			<li><a href="#introduction" id="intro-nav">Introduction</a></li>
+			<li>&nbsp;|&nbsp;</li>
 			<li><a href="#tactics" id ="tactics-nav">Tactics</a></li>
 		</ul>
 	</div>
@@ -28,13 +29,13 @@
 	</div>
 	<div class="container" id = "card-container">
 		<div class = "row">
-			<div class="col" id ="kane-card">
+			<div class="col-lg-4" id ="kane-card">
 				<img src="extra/kane_playing_card.png" alt="Harry Kane playing card">
 			</div>
-			<div class="col" id ="mount-card">
+			<div class="col-lg-4" id ="mount-card">
 				<img src="extra/mount_playing_card.png" alt="Mason Mount playing card">
 			</div>
-			<div class="col" id ="trent-card">
+			<div class="col-lg-4" id ="trent-card">
 				<img src="extra/trent_playing_card.png" alt="Trent Alexander-Arnold playing card">
 			</div>
 		</div>

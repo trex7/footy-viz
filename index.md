@@ -1,6 +1,6 @@
 <script src="js/test.js"></script>
 <body>
-	<div class = "container-light-blue-bg">
+	<div class = "full-width-parent" bg="light-blue">
 		<div class="container" id = "title-container">
 			<div class="row">
 				<h3>Analyzing England Soccer Superstars</h3>
@@ -34,7 +34,7 @@
 		<button onclick="changeColor()">Test Button Here</button>
 	</div>
 	-->
-	<div class="container" id = "title-frame-for-d3">
+	<div class="mt-2 container" id = "title-frame-for-d3">
 		<div class = "row">
 			<h3>England's Tactics: Our Recommendation</h3>
 		</div>

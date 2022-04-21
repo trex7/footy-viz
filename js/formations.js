@@ -151,6 +151,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         .on('drag', dragged)
         .on('end', dragended)
 
+    var div = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+
     // initial setup
     function default_setup () {
             d3.csv("https://raw.githubusercontent.com/timschott/footy-viz/main/extra/3_4_2_1.csv", dottype, function(error, dots) {

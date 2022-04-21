@@ -128,7 +128,7 @@ var drag = d3.behavior.drag()
 function default1(){
     // controls default behavior
     // so, by default, load England's starting lineup
-    d3.csv("../data/3_4_2_1.csv", dottype, function(error, dots) {
+    d3.csv("../extra/3_4_2_1.csv", dottype, function(error, dots) {
         dot = holder.append("g")
         .selectAll(".circle_players")
             .data(dots)

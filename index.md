@@ -1,4 +1,5 @@
 <script src="js/test.js"></script>
+<script src="js/formations.js"></script>
 <body>
 	<div class="container" id = "title-container">
 		<div class="row">
@@ -46,7 +47,11 @@
 		<div class="row">
 			<div class="col">
 				<h5>3-4-2-1</h5>
-				<p>England at Euro 2020 Final.</p>
+				<!--
+				<p>This is how England at Euro 2020 Final. Starting with 3 defenders at the back can underpin an aggressively offensive strategy, but England's personnel included an equal number of defenders and attacking players. This resulted in a rather rigid gameplan that produced few promising attack chances -- save for an almost immediate goal in the second minute, courtesy of Luke Shaw.</p>
+				-->	
+				<input type="image" src="images/default-tactics-boards.png" style="padding:0px;margin-left: auto; margin-right:auto; width: 20%; height: 10%; opacity: 0.6;" src="http://www.google.com" onclick="default_lineup()"  onmouseout="this.style.opacity=0.6;" onmouseover="this.style.opacity=1;"/>
+				<p>England's formation for the Euro 2020 Finals match...where they lost to Italy.</p>
 			</div>
 			<div class="col">
 				<h5>4-2-3-1</h5>

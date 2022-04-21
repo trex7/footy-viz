@@ -1,6 +1,6 @@
 <script src="js/test.js"></script>
 <body>
-	<div class = ".bg-primary .bg-lighten-xl">
+	<div class = "container-light-blue-bg">
 		<div class="container" id = "title-container">
 			<div class="row">
 				<h3>Analyzing England Soccer Superstars</h3>

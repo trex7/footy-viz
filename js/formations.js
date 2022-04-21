@@ -173,7 +173,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 //todo: add display for player names, especially defense.
 function default_lineup(){
-    console.log("I just called default lineup!");
     d3.csv("https://raw.githubusercontent.com/timschott/footy-viz/main/extra/3_4_2_1.csv", dottype, function(error, dots) {
       var dot = d3.selectAll(".circle_players").data(dots)
             .transition()
@@ -184,7 +183,6 @@ function default_lineup(){
 }
 
 function new_lineup(){
-    console.log("I just called new lineup!");
     d3.csv("https://raw.githubusercontent.com/timschott/footy-viz/main/extra/4_2_3_1.csv", dottype, function(error, dots) {
       var dot = d3.selectAll(".circle_players").data(dots)
             .transition()

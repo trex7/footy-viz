@@ -213,9 +213,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     default_setup();
 });
 
-//todo: add display for player names, especially defense.
-//todo: add a title that injects the current graph setup so it's clear what's being displayed
-//and a description of what is being shown
 function default_lineup(){
     d3.csv("https://raw.githubusercontent.com/timschott/footy-viz/main/extra/3_4_2_1.csv", dottype, function(error, dots) {
       var dot = d3.selectAll(".circle_players").data(dots)

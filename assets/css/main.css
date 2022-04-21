@@ -33,6 +33,7 @@ body {
 
 #tactics-title {
 	color: #EA1F29;
+	font-weight: 700;
 }
 
 #red-span {
@@ -42,7 +43,6 @@ body {
 
 #blue-span {
 	color: #2B57AC;
-	font-weight: 700;
 }
 
 div.tooltip {
@@ -62,3 +62,7 @@ img {
 	max-width: 100%;
 	height: auto;
   }
+
+h5 {
+	font-weight: 700;
+}

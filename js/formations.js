@@ -184,8 +184,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 
                 // player name
                 div.html(d.name)
-                    .style("left", (d.x + 10) + "px")
-                    .style("top", (d.y - 10) + "px");
+                    .style("left", x(d.x + 10) + "px")
+                    .style("top", y(d.y - 10) + "px");
            })
            .on('mouseout', function (d, i) {
                 // decrease size

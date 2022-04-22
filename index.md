@@ -72,7 +72,7 @@
 		</div>	
 	</div>
 	<div class="container" id="positions-board-title">
-		<h5><span id="tactics-title">3-4-2-1</span> formation.</h5>
+		<h5><span id="tactics-title">3-4-2-1</span></h5>
 		<p id="tactics-explainer">England's usual formation, which lost them the Euro 2020 Finals match. England scored a goal 2 minutes after kickoff, but managed just 1 shot on target the rest of the match. Trent-Alexander Arnold did not play, while <span id ='red-span'>Mason Mount</span> and <span id ='red-span'>Harry Kane</span> (highlighted in <span id ='red-span'>red</span>) performed poorly. This formation is relatively conservative, especially given the players England used. They fielded a team with 5 defenders instead of the usual 4. Their outside defenders (Shaw and Trippier) were tasked with shutting down wide options for Italy. This left England with scant attacking options when they received the ball.</p>
 	</div>
 	<div class="container" id="positions-board">

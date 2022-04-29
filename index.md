@@ -42,6 +42,35 @@
 			</div>
 		</div>
 	</div>
+	<div class="container" id = "title-frame-for-primer">
+		<div class = "row">
+			<h3>Primer</h3>
+		</div>
+		<div class = "row">
+			<h5>How are soccer teams structured?</h5>
+		</div>
+	</div>
+	<div class="container" id = "frame-the-primer">
+		<div class = "row">
+			<p>Each team has 11 players. There are two 45 minute halves. The purpose of the game is to score goals against the opposition. Whoever has the most goals at the end of the game wins. It's illegal to use your hands, of course -- which is why most other countries refer to the game as "football."</p>
+			<p>Besides the goalkeeper, players fall into 3 broad categories. <i>Forwards</i> are the goal scorers who are the best at shooting and scoring goals. <i>Defenders</i> protect their goal and try to stop opposition forwards from advancing. <i>Midfielders</i> occupy the middle of the field and try to link together the work from their team's defense and make opportunities for the forwards to score.</p>
+			<p>Each country organizes its soccer teams into a system of "leagues" similar to the NFL. For example, in England their top soccer league is the "Premier League" and in Germany it is the "Bundesliga." Within those leagues, the teams are typically referred to as <i>clubs</i></p>.
+			<p>The best players from across the world receive the honor to play for their country of origin's <i>national team</i>. The dynamics of each national team are fascinating, then, because players whose "day-jobs" are quite different from one another have to coalesce in short stints of "international breaks" throughout the club soccer season.</p>
+			<p>Winning the World Cup is the crown jewel for national teams. It's played every 4 years, and is the most-watched and most-prestigious sporting event in the world</p>.
+			<p>To get a better sense of what a soccer team looks lke in action, we're going to introduce a few videos and screencaps from matches</p>.
+		</div>
+	</div>
+	<div class="container" id = "title-frame-for-primer">
+		<div class = "row">
+			<h3>Match Footage</h3>
+		</div>
+		<div class = "row">
+			<h5>How are soccer teams structured?</h5>
+		</div>
+		<div class = "col">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/FONVyowNjUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
 	<div class="container" id = "title-frame-for-d3">
 		<div class = "row">
 			<h3>Tactics</h3>

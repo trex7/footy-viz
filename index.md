@@ -68,7 +68,16 @@
 			<h5>How are soccer teams structured?</h5>
 		</div>
 		<div class = "embed-responsive embed-responsive-16by9">
+			<p>This is footage from a club match in England. The team in blue, Manchester City, enjoys most of the ball possession. You can see their aggressive defending style around the x:yz mark. Note their structure: 4 defenders at the back, and then a mixture of midfielders and forward that lead their attacks on goal.
 			<iframe embed-responsive-item src="https://www.youtube.com/embed/FONVyowNjUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class = "embed-responsive embed-responsive-16by9">
+			<p>This is footage from a club match in Germany. The team in blue, Hoffenheim, are trying to advance the ball upfield. They exhibit a different structure. 3 defenders are supported by a large group of 5 midfielders along with the 2 attacking forwards.
+			<iframe embed-responsive-item src="https://www.youtube.com/embed/FONVyowNjUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class="row">
+			<p>It's common to classify the way that teams arrange their players into a <i>lineup</i>. These clips show different strategies, with Manchester City adopting something like a "4-5-1" and Hoffenheim adopting a "3-5-2." To interpret these labels, you read from left to right with the left most number representing the number of defenders. For instance, Manchester City used <b>4</b> defenders, <b>5</b> midfielders, and <b>1</b> forward.</p> 
+			<p>The choice of lineup is quite important because it implicates which players will be selected; you cannot have a team with 11 defenders running around. For national teams like England, the problem is magnified because every player is phenomenal. So, before exploring the strengths of our key players, we want to explore the best lineup choice for England?</p>
 		</div>
 	</div>
 	<div class="container" id = "title-frame-for-d3">
@@ -105,6 +114,19 @@
 		<p id="tactics-explainer">England's usual formation, which lost them the Euro 2020 Finals match. England scored a goal 2 minutes after kickoff, but managed just 1 shot on target the rest of the match. Trent-Alexander Arnold did not play, while <span id ='red-span'>Mason Mount</span> and <span id ='red-span'>Harry Kane</span> (highlighted in <span id ='red-span'>red</span>) performed poorly. This formation is relatively conservative, especially given the players England used. They fielded a team with 5 defenders instead of the usual 4. Their outside defenders (Shaw and Trippier) were tasked with shutting down wide options for Italy. This left England with scant attacking options when they received the ball.</p>
 	</div>
 	<div class="container" id="positions-board">
+	</div>
+	<div class="container" id="tactics-outtro">
+		<div class = "row">
+			<p>Now that we've established the structure of soccer teams in general and recommended a starting lineup for England, let's have a look at our key players and why we believe their presence is a critical factor for England's success.
+		</div>
+	</div>
+	<div class="container" id = "title-frame-for-kane">
+		<div class = "row">
+			<h3>Harry Kane</h3>
+		</div>
+		<div class = "row">
+			<h5>Just how good is England's star striker?</h5>
+		</div>
 	</div>
 <footer class="site-footer">
 	<span class="site-footer-owner"><a href="https://github.com/timschott/footy-viz">footy-viz</a> is maintained by <a href="https://github.com/timschott">timschott</a>.</span>

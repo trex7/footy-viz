@@ -37,11 +37,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
     })
 
-    var x_axis = d3.axisBottom(x);
-    x_axis.axisLabel('Player'); 
-
     // x axis label
-    // chart.xAxis.axisLabel('Player');
+    svg.append("text")             
+    .attr("transform",
+          "translate(" + (width/2) + " ," + 
+                         (height + margin.top + 20) + ")")
+    .style("text-anchor", "middle")
+    .text("Player");
 
     // y axis
     var y = d3.scaleLinear()
@@ -50,11 +52,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
     svg.append("g")
         .style("font", "20px")
         .call(d3.axisLeft(y));
-    
-    // y axis label
-    // chart.xAxis.axisLabel('Goals Scored');
-    var y_axis = d3.axisLeft(y);
-    y_axis.axisLabel('Goals Scored'); 
+
+    svg.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 0 - margin.left)
+    .attr("x",0 - (height / 2))
+    .attr("dy", "1em")
+    .style("text-anchor", "middle")
+    .text("Goals Scored");   
 
     // bars
     svg.selectAll("mybar")

@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
     // set the dimensions and margins of the graph
-    var margin = {top: 10, right: 30, bottom: 90, left: 40},
-        width = 660 - margin.left - margin.right,
-        height = 660 - margin.top - margin.bottom;
+    var margin = {top: 10, right: 10, bottom: 10, left: 10},
+        width = 760 - margin.left - margin.right,
+        height = 760 - margin.top - margin.bottom;
 
     // append the svg object to the body of the page
     var svg = d3.select("#goal-numbers-container")
@@ -47,18 +47,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
     .data(data)
     .enter()
     .append("rect")
-        .attr("x", function(d) { return x(d.Player); })
-        .attr("width", x.bandwidth())
-        // no bar at the beginning thus:
-        .attr("height", function(d) { return height - y(0); }) // always equal to 0
-        .attr("y", function(d) { return y(0); })
-        .style("fill", function(d) {
-            if (d.Player == "Harry Kane") {
-                return "#56B4E9"
-            } else {
-                return "#999999";
-            }
-       })
+    .attr("x", function(d) { return x(d.Player); })
+    .attr("width", x.bandwidth())
+    // no bar at the beginning thus:
+    .attr("height", function(d) { return height - y(0); }) // always equal to 0
+    .attr("y", function(d) { return y(0); })
+    .style("fill", function(d) {
+        if (d.Player == "Harry Kane") {
+            return "#56B4E9"
+        } else {
+            return "#999999";
+        }
+    })
 
     // animation
     svg.selectAll("rect")

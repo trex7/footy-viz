@@ -62,7 +62,7 @@
 			<p>To get a better sense of what a soccer team looks lke in action, we're going to introduce a few videos and screencaps from matches.</p>
 		</div>
 	</div>
-	<div class="container" id = "title-frame-for-primer">
+	<div class="container" id = "primer">
 		<div class = "row">
 			<h3>Match Footage</h3>
 		</div>
@@ -73,6 +73,7 @@
 			<p>This is footage from a club match in Germany. The team in blue, Hoffenheim, are trying to advance the ball upfield. 3 defenders are supported by a large group of 5 midfielders along with the 2 attacking forwards.</p>
 			<div class="embed-responsive embed-responsive-16by9">
 			<iframe embed-responsive-item src="https://www.youtube.com/embed/uY6tgCNg-cU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
 		</div>
 		<div class = "col">
 			<p>This is footage from a club match in England. The team in blue, Manchester City, enjoys most of the ball possession. You can see their aggressive defending style around the 40-second mark. They arrange their team differently than the first clip: 4 defenders at the back, and then a mixture of midfielders and forwards that lead their attacks on goal.</p>
@@ -119,7 +120,7 @@
 		<h5><span id="tactics-title">3-4-2-1</span></h5>
 		<p id="tactics-explainer">England's usual formation, which lost them the Euro 2020 Finals match. England scored a goal 2 minutes after kickoff, but managed just 1 shot on target the rest of the match. Trent-Alexander Arnold did not play, while <span id ='red-span'>Mason Mount</span> and <span id ='red-span'>Harry Kane</span> (highlighted in <span id ='red-span'>red</span>) performed poorly. This formation is relatively conservative, especially given the players England used. They fielded a team with 5 defenders instead of the usual 4. Their outside defenders (Shaw and Trippier) were tasked with shutting down wide options for Italy. This left England with scant attacking options.</p>
 	</div>
-	<div class="container" id="positions-board">
+	<div class="d-flex justify-content-center" id="positions-board">
 	</div>
 	<div class="container" id="tactics-outtro">
 		<div class = "row">

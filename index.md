@@ -117,7 +117,7 @@
 	</div>
 	<div class="container" id="positions-board-title">
 		<h5><span id="tactics-title">3-4-2-1</span></h5>
-		<p id="tactics-explainer">England's usual formation, which lost them the Euro 2020 Finals match. England scored a goal 2 minutes after kickoff, but managed just 1 shot on target the rest of the match. Trent-Alexander Arnold did not play, while <span id ='red-span'>Mason Mount</span> and <span id ='red-span'>Harry Kane</span> (highlighted in <span id ='red-span'>red</span>) performed poorly. This formation is relatively conservative, especially given the players England used. They fielded a team with 5 defenders instead of the usual 4. Their outside defenders (Shaw and Trippier) were tasked with shutting down wide options for Italy. This left England with scant attacking options when they received the ball.</p>
+		<p id="tactics-explainer">England's usual formation, which lost them the Euro 2020 Finals match. England scored a goal 2 minutes after kickoff, but managed just 1 shot on target the rest of the match. Trent-Alexander Arnold did not play, while <span id ='red-span'>Mason Mount</span> and <span id ='red-span'>Harry Kane</span> (highlighted in <span id ='red-span'>red</span>) performed poorly. This formation is relatively conservative, especially given the players England used. They fielded a team with 5 defenders instead of the usual 4. Their outside defenders (Shaw and Trippier) were tasked with shutting down wide options for Italy. This left England with scant attacking options.</p>
 	</div>
 	<div class="container" id="positions-board">
 	</div>
@@ -141,7 +141,7 @@
 			<p>Let's take a look at Kane's international goal scoring.</p>
 		</div>
 	</div>
-	<div class="container" id="goal-numbers-container">
+	<div class="d-flex justify-content-center" id="goal-numbers-container">
 	</div>
 <footer class="site-footer">
 	<span class="site-footer-owner"><a href="https://github.com/timschott/footy-viz">footy-viz</a> is maintained by <a href="https://github.com/timschott">timschott</a>.</span>

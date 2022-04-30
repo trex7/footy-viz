@@ -25,9 +25,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
     .attr("transform", "translate(0," + height + ")")
     .call(d3.axisBottom(x))
     .selectAll("text")
-        .attr("transform", "translate(-10,0)rotate(-45)")
-        .style("font-size", "16px")     
-        .style("text-anchor", "end");
+    .style("font-size", "20px")     
+    .style("text-anchor", "end")
+    .attr("transform", function(d) {
+        if (d.Player == "Harry Kane") {
+            return "translate(50, 10)";
+        } else if (d.Player == "Cristiano Ronaldo") {
+            return "translate (80, 10)";
+        } else {
+            return "translate(65, 10)";
+        }
+    })
+
+    var x_axis = d3.axisBottom(x);
+    x_axis.axisLabel('Player'); 
 
     // x axis label
     // chart.xAxis.axisLabel('Player');
@@ -37,10 +48,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
         .domain([0, 10])
         .range([ height, 0]);
     svg.append("g")
+        .style("font", "20px")
         .call(d3.axisLeft(y));
     
     // y axis label
     // chart.xAxis.axisLabel('Goals Scored');
+    var y_axis = d3.axisLeft(y);
+    y_axis.axisLabel('Goals Scored'); 
 
     // bars
     svg.selectAll("mybar")
@@ -54,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     .attr("y", function(d) { return y(0); })
     .style("fill", function(d) {
         if (d.Player == "Harry Kane") {
-            return "#56B4E9"
+            return "#56B4E9";
         } else {
             return "#999999";
         }

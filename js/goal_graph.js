@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
     // set the dimensions and margins of the graph
-    var margin = {top: 10, right: 10, bottom: 10, left: 10},
+    var margin = {top: 50, right: 20, bottom: 50, left: 20},
         width = 760 - margin.left - margin.right,
         height = 760 - margin.top - margin.bottom;
 

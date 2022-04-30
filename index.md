@@ -13,6 +13,8 @@
 			<li><a href="#introduction" id="intro-nav">Introduction</a></li>
 			<li>&nbsp;|&nbsp;</li>
 			<li><a href="#tactics" id ="tactics-nav">Tactics</a></li>
+			<li>&nbsp;|&nbsp;</li>
+			<li><a href="#harry-kane" id ="kane-nav">Harry Kane</a></li>
 		</ul>
 	</div>
 </header>
@@ -53,6 +55,7 @@
 	<div class="container" id = "frame-the-primer">
 		<div class = "row">
 			<p>Before cracking into these key players, it's important to review some of the basics of the game of soccer and the types of tournaments teams compete in.</p>
+			<p>For those already familiar with soccer, feel free to skip ahead to the <a href="timschott.com/footy-viz#tactics">Tactics</a> section.</p>
 			<p>Each team has 11 players. There are two 45 minute halves. The purpose of the game is to score goals against the opposition. Whoever has the most goals at the end of the game wins. It's illegal to use your hands, of course -- which is why most other countries refer to the game as "football."</p>
 			<p>Besides the goalkeeper, players fall into 3 broad categories. <i>Forwards</i> are the goal scorers who are the best at shooting and scoring goals. <i>Defenders</i> protect their goal and try to stop opposition forwards from advancing. <i>Midfielders</i> occupy the middle of the field and try to link together the work from their team's defense and make opportunities for the forwards to score.</p>
 			<p>Each country organizes its soccer teams into a system of "leagues" similar to the NFL. For example, in England their top soccer league is the "Premier League" and in Germany it is the "Bundesliga." Within those leagues, the teams are typically referred to as <i>clubs</i>.</p>
@@ -143,6 +146,14 @@
 		</div>
 	</div>
 	<div class="d-flex justify-content-center" id="goal-numbers-container">
+	</div>
+	<div class="container" id="graph-outtro">
+		<div class = "row">
+			<p>Kane has scored more goals than any player in the world over the past 2 major competitions. He is well on his way to breaking England's all-time scoring record as well. For some in-depth analysis, let's take a look at where on the field he most effectively shoots from.</p>
+		</div>
+	</div>
+	<div class="d-flex justify-content-center" id="shot-graph-area">
+		<img src="extra/shots-graph-2.png.png" alt="Harry Kane shot graph" class="img-fluid">
 	</div>
 <footer class="site-footer">
 	<span class="site-footer-owner"><a href="https://github.com/timschott/footy-viz">footy-viz</a> is maintained by <a href="https://github.com/timschott">timschott</a>.</span>

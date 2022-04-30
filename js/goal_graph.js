@@ -29,28 +29,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
     .style("text-anchor", "end")
     .attr("transform", function(d) {
         if (d.Player == "Harry Kane") {
-            return "translate(50, 10)";
+            return "translate(45, 10)";
         } else if (d.Player == "Cristiano Ronaldo") {
-            return "translate (80, 10)";
+            return "translate(80, 10)";
         } else {
             return "translate(65, 10)";
         }
     })
-
-    // x axis label
-    svg.append("text")             
-    .attr("transform",
-          "translate(" + (width/2) + " ," + 
-                         (height + margin.top + 20) + ")")
-    .style("text-anchor", "middle")
-    .text("Player");
 
     // y axis
     var y = d3.scaleLinear()
         .domain([0, 10])
         .range([ height, 0]);
     svg.append("g")
-        .style("font", "20px")
+        .style("font-size", "20px")
         .call(d3.axisLeft(y));
 
     svg.append("text")

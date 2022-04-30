@@ -138,7 +138,7 @@
 		<div class = "row">
 			<p>Harry Kane boasts an impressive career for both club and country. At just 28 years of age he has already climbed England's goal-scoring ranks, boasting the third most goals in history for their national team.</p>
 			<p>His playing style can be described as the perfect mixture of pragmatism and athleticism. His large frame lets him excel in aerial duels, yet his excellent footwork and great passing ability allows him to easily incorporate his teammates into attacking plays. He is far and away England's most important player. </p>
-			<p>Let's take a look at Kane's international goal-scoring.</p>
+			<p>Let's take a look at Kane's international goal scoring.</p>
 		</div>
 	</div>
 	<div class="container" id="goal-numbers-container">

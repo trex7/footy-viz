@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             "translate(" + margin.left + "," + margin.top + ")");
 
     // parse the data
-    d3.csv("https://raw.githubusercontent.com/timschott/footy-viz/main/extra/top_scoreres_df.csv", function(data) {
+    d3.csv("https://raw.githubusercontent.com/timschott/footy-viz/main/extra/top_scorers_df.csv", function(data) {
 
     // x axis
     var x = d3.scaleBand()

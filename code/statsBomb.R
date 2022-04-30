@@ -282,3 +282,42 @@ graph_df <- as.data.frame(rbind(kane, ronaldo, lukaku))
 colnames(graph_df) <- c("Player", "Goals", "Country")
 
 write.csv(graph_df, "top_scorers_df.csv")
+
+## mount passes
+full_mount <- england_event_data %>%
+  filter(player.name == 'Mason Mount') %>%
+  filter(period != 5) # remove penatly shootout
+
+mount_passes <- full_mount %>%
+  filter(type.name=="Pass" & is.na(pass.outcome.name) & player.id==7843)
+
+mount_passes <- apply(mount_passes,2,as.character)
+
+write.csv(mount_passes, "mount_passes.csv")
+
+## Mount minutes:
+minutes_data %>% 
+  group_by(player.id) %>% 
+  filter(player.id == 7843) %>% 
+  summarize(minutes = sum(MinutesPlayed)) %>%
+  mutate(nineties = minutes/90)
+
+## trent passes
+full_trent <- england_event_data %>%
+  filter(player.name == 'Trent Alexander-Arnold') %>%
+  filter(period != 5) # remove penatly shootout
+
+trent_passes <- full_trent %>%
+  filter(type.name=="Pass" & is.na(pass.outcome.name) & player.id==3664)
+
+## Trent minutes:
+minutes_data %>% 
+  group_by(player.id) %>% 
+  filter(player.id == 3664) %>% 
+  summarize(minutes = sum(MinutesPlayed)) %>%
+  mutate(nineties = minutes/90)
+
+
+trent_passes <- apply(trent_passes,2,as.character)
+
+write.csv(trent_passes, "trent_passes.csv")

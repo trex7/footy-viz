@@ -1,4 +1,4 @@
-<script src="js/test.js"></script>
+<script src="js/goal_graph.js"></script>
 <script src="js/formations.js"></script>
 <title>Footy Viz</title>
 <header class="page-header" role="banner">
@@ -25,7 +25,7 @@
 	<div class="container" id = "intro-container">
 		<div class = "row form-group">
 			<p>Although the English men's soccer team is one of the oldest national teams in the world, they’ve only won a single major tournament: the 1966 World Cup.</p>
-			<p>Can they win this year's World Cup?</p>
+			<p>Can they win this year's 2022 World Cup?</p>
 			<p>We'll analyze their squad through a few different perspectives, focusing on 3 key players:</p>
 		</div>
 	</div>
@@ -44,7 +44,7 @@
 	</div>
 	<div class="container" id = "title-frame-for-primer">
 		<div class = "row">
-			<h3>Primer</h3>
+			<h3>Contextual Primer</h3>
 		</div>
 		<div class = "row">
 			<h5>How are soccer teams structured?</h5>
@@ -52,11 +52,13 @@
 	</div>
 	<div class="container" id = "frame-the-primer">
 		<div class = "row">
+			<p>Before cracking into these key players, it's important to review some of the basics of the game of soccer and the types of tournaments teams compete in.</p>
 			<p>Each team has 11 players. There are two 45 minute halves. The purpose of the game is to score goals against the opposition. Whoever has the most goals at the end of the game wins. It's illegal to use your hands, of course -- which is why most other countries refer to the game as "football."</p>
 			<p>Besides the goalkeeper, players fall into 3 broad categories. <i>Forwards</i> are the goal scorers who are the best at shooting and scoring goals. <i>Defenders</i> protect their goal and try to stop opposition forwards from advancing. <i>Midfielders</i> occupy the middle of the field and try to link together the work from their team's defense and make opportunities for the forwards to score.</p>
 			<p>Each country organizes its soccer teams into a system of "leagues" similar to the NFL. For example, in England their top soccer league is the "Premier League" and in Germany it is the "Bundesliga." Within those leagues, the teams are typically referred to as <i>clubs</i>.</p>
 			<p>The best players from across the world receive the honor to play for their country of origin's <i>national team</i>. The dynamics of each national team are fascinating, then, because players whose "day-jobs" are quite different from one another have to coalesce in short stints of "international breaks" throughout the club soccer season.</p>
-			<p>Winning the World Cup is the crown jewel for national teams. It's played every 4 years, and is the most-watched and most-prestigious sporting event in the world</p>.
+			<p>Winning the World Cup is the crown jewel for national teams. It's played every 4 years, and is the most-watched and most-prestigious sporting event in the world.</p> 
+			<p>Besides the World Cup, another major tournament England competes in is the European Cup ("The Euros") which is also played every 4 years.</p>
 			<p>To get a better sense of what a soccer team looks lke in action, we're going to introduce a few videos and screencaps from matches.</p>
 		</div>
 	</div>
@@ -68,19 +70,19 @@
 			<h5>How are soccer teams structured?</h5>
 		</div>
 		<div class = "col">
-			<p>This is footage from a club match in England. The team in blue, Manchester City, enjoys most of the ball possession. You can see their aggressive defending style around the x:yz mark. Note their structure: 4 defenders at the back, and then a mixture of midfielders and forward that lead their attacks on goal.</p>
+			<p>This is footage from a club match in Germany. The team in blue, Hoffenheim, are trying to advance the ball upfield. 3 defenders are supported by a large group of 5 midfielders along with the 2 attacking forwards.</p>
+			<div class="embed-responsive embed-responsive-16by9">
+			<iframe embed-responsive-item src="https://www.youtube.com/embed/uY6tgCNg-cU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class = "col">
+			<p>This is footage from a club match in England. The team in blue, Manchester City, enjoys most of the ball possession. You can see their aggressive defending style around the 40-second mark. They arrange their team differently than the first clip: 4 defenders at the back, and then a mixture of midfielders and forwards that lead their attacks on goal.</p>
 			<div class="embed-responsive embed-responsive-16by9">
 				<iframe embed-responsive-item src="https://www.youtube.com/embed/FONVyowNjUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
-		<div class = "col">
-			<p>This is footage from a club match in Germany. The team in blue, Hoffenheim, are trying to advance the ball upfield. They exhibit a different structure. 3 defenders are supported by a large group of 5 midfielders along with the 2 attacking forwards.</p>
-			<div class="embed-responsive embed-responsive-16by9">
-			<iframe embed-responsive-item src="https://www.youtube.com/embed/FONVyowNjUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
 		<div class="row">
 			<p>It's common to classify the way that teams arrange their players into a <i>lineup</i>. These clips show different strategies, with Manchester City adopting something like a "4-5-1" and Hoffenheim adopting a "3-5-2." To interpret these labels, you read from left to right with the left most number representing the number of defenders. For instance, Manchester City used <b>4</b> defenders, <b>5</b> midfielders, and <b>1</b> forward.</p> 
-			<p>The choice of lineup is quite important because it implicates which players will be selected; you cannot have a team with 11 defenders running around. For national teams like England, the problem is magnified because every player is phenomenal. So, before exploring the strengths of our key players, we want to explore the best lineup choice for England?</p>
+			<p>The choice of lineup is quite important because it implicates which players will be selected; you cannot have a team with 11 defenders running around. For national teams like England, the problem is magnified because every player is phenomenal. So, before exploring the strengths of our key players, we want to consider the best lineup choice for England.</p>
 		</div>
 	</div>
 	<div class="container" id = "title-frame-for-d3">
@@ -93,6 +95,7 @@
 	</div>
 	<div class="container" id = "frame-the-d3-container">
 		<div class = "row">
+			<p>Recently, England have been strong performers in international tournaments, finishing in 3rd place in the 2018 World Cup and losing in the finals of the 2020 Euro Cup.</p>
 			<p>Let's compare the players England selected for the 2020 Euro Cup Final against Italy to the lineup that our group thinks would give them the best chance of winning!</p>
 			<p>Click between formations to see how think they should play.</p>
 			<p>We've highlighted the positions of our 3 key players.</p>
@@ -120,7 +123,7 @@
 	</div>
 	<div class="container" id="tactics-outtro">
 		<div class = "row">
-			<p>Now that we've established the structure of soccer teams in general and recommended a starting lineup for England, let's have a look at our key players and why we believe their presence is a critical factor for England's success.
+			<p>Now that we've established the structure of soccer teams in general and recommended a starting lineup for England, let's have a look at our key players and why we believe their presence is a critical factor for England's success.</p>
 		</div>
 	</div>
 	<div class="container" id = "title-frame-for-kane">
@@ -130,14 +133,15 @@
 		<div class = "row">
 			<h5>Just how good is England's star striker?</h5>
 		</div>
+	</div>
+	<div class="container" id="frame-for-kane">
 		<div class = "row">
 			<p>Harry Kane boasts an impressive career for both club and country. At just 28 years of age he has already climbed England's goal-scoring ranks, boasting the third most goals in history for their national team.</p>
 			<p>His playing style can be described as the perfect mixture of pragmatism and athleticism. His large frame lets him excel in aerial duels, yet his excellent footwork and great passing ability allows him to easily incorporate his teammates into attacking plays. He is far and away England's most important player. </p>
-			<p>Let's take a look at Kane's international performances.</p>
+			<p>Let's take a look at Kane's international goal-scoring.</p>
 		</div>
-		<div class = "row">
-			<h5>Harry Kane, By The Numbers</h5>
-		</div>
+	</div>
+	<div class="container" id="goal-numbers-container">
 	</div>
 <footer class="site-footer">
 	<span class="site-footer-owner"><a href="https://github.com/timschott/footy-viz">footy-viz</a> is maintained by <a href="https://github.com/timschott">timschott</a>.</span>

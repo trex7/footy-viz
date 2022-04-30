@@ -272,3 +272,13 @@ heatmap_viz <- ggplot(data = distinct_binned_heatmap, aes(x = location.x, y = lo
 
 ## export as svg
 ggsave(file="heat_map.svg", plot=heatmap_viz, width=16, height=16)
+
+## simple bar graph for Kane's goals
+kane <- c("Harry Kane", 10, "England")
+ronaldo <- c("Cristiano Ronaldo", 9, "Portugal")
+lukaku <- c("Romelu Lukaku", 8, "Belgium")
+
+graph_df <- as.data.frame(rbind(kane, ronaldo, lukaku))
+colnames(graph_df) <- c("Player", "Goals", "Country")
+
+write.csv(graph_df, "top_scorers_df.csv")

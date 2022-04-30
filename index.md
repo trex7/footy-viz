@@ -67,12 +67,15 @@
 		<div class = "row">
 			<h5>How are soccer teams structured?</h5>
 		</div>
-		<div class = "embed-responsive embed-responsive-16by9">
-			<p>This is footage from a club match in England. The team in blue, Manchester City, enjoys most of the ball possession. You can see their aggressive defending style around the x:yz mark. Note their structure: 4 defenders at the back, and then a mixture of midfielders and forward that lead their attacks on goal.
-			<iframe embed-responsive-item src="https://www.youtube.com/embed/FONVyowNjUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class = "col">
+			<p>This is footage from a club match in England. The team in blue, Manchester City, enjoys most of the ball possession. You can see their aggressive defending style around the x:yz mark. Note their structure: 4 defenders at the back, and then a mixture of midfielders and forward that lead their attacks on goal.</p>
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe embed-responsive-item src="https://www.youtube.com/embed/FONVyowNjUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
 		</div>
-		<div class = "embed-responsive embed-responsive-16by9">
-			<p>This is footage from a club match in Germany. The team in blue, Hoffenheim, are trying to advance the ball upfield. They exhibit a different structure. 3 defenders are supported by a large group of 5 midfielders along with the 2 attacking forwards.
+		<div class = "col">
+			<p>This is footage from a club match in Germany. The team in blue, Hoffenheim, are trying to advance the ball upfield. They exhibit a different structure. 3 defenders are supported by a large group of 5 midfielders along with the 2 attacking forwards.</p>
+			<div class="embed-responsive embed-responsive-16by9">
 			<iframe embed-responsive-item src="https://www.youtube.com/embed/FONVyowNjUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<div class="row">
@@ -126,6 +129,14 @@
 		</div>
 		<div class = "row">
 			<h5>Just how good is England's star striker?</h5>
+		</div>
+		<div class = "row">
+			<p>Harry Kane boasts an impressive career for both club and country. At just 28 years of age he has already climbed England's goal-scoring ranks, boasting the third most goals in history for their national team.</p>
+			<p>His playing style can be described as the perfect mixture of pragmatism and athleticism. His large frame lets him excel in aerial duels, yet his excellent footwork and great passing ability allows him to easily incorporate his teammates into attacking plays. He is far and away England's most important player. </p>
+			<p>Let's take a look at Kane's international performances.</p>
+		</div>
+		<div class = "row">
+			<h5>Harry Kane, By The Numbers</h5>
 		</div>
 	</div>
 <footer class="site-footer">

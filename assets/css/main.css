@@ -31,6 +31,11 @@ body {
 	font-size: 30px;
 }
 
+#kane-nav {
+	color: #f7fbff;
+	font-size: 30px;
+}
+
 #tactics-title {
 	color: #EA1F29;
 	font-weight: 700;
@@ -65,4 +70,9 @@ img {
 
 h1,h2,h3,h4,h5 {
 	font-weight: 700;
+}
+
+h5 {
+  pointer-events: none;
+  cursor: default;
 }

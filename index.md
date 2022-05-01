@@ -210,6 +210,41 @@
 	<div class="row">
 		<p>This graphic visualizes the position of the ball and the direction of the pass. All of these passes have end positions in the attacking third. The cluster in the wing positions illustrate how much he likes to create plays in those positions and then eventually slide in passes in the centre.</p>
 		<p>Going forward, England would do well to utilize his creativity by continuing to entrust him with the responsibility of creating scoring chances for strikers like Kane. Plus, as he continues to develop and gain experience, he'll also improve as a shooter and start to score goals of his own.</p>
+	</div></div>
+	<div class="container" id = "title-frame-for-kane">
+		<div class = "row">
+			<h3>Trent Alexander Arnold(Defender)</h3>
+		</div>
+		<div class = "row">
+			<h5>What does Trent bring to the table?</h5>
+		</div>
+	</div>
+	<div class="container" id="mount-intro">
+		<div class="row">
+			<p>Trent is an up and coming defender who has consistently been performing very well in the local leagues but hasnt played alot in the international games. We feel he can make a big difference in helping Mount and Kane in winning games.</p>
+		</div>
+	</div>
+	<p>But before we begin, let us look at some ideal attacking and defensive radar charts so we can get a good baseline understanding of different playstyles</p>
+	<div class="d-flex justify-content-center" id="mount-pass-area">
+		<img src="extra/together_base_final.png" alt="together radar image" class="img-fluid">
+	</div>
+	<p>Let us now contrast these shapes to how Trent compares to other talented defenders currently in Englands International team such as Kyle Walker</p>
+	<div class="d-flex justify-content-center" id="mount-touch-area">
+		<img src="extra/trent_radar.png" alt="Trent Passing image" class="img-fluid">
+	</div>
+	<div class="row">
+		<p> By reflecting Trent and Kyles playstyle to the ideal attacking and defensive charts above you can see how Trent is more suited towards an attacking playstyle as compared to Kyle who is more defensive.</p>
+	</div>
+	<div class="row">
+		<p> This data lays a strong argument that Trent's attacking playstyle will link very well with Mount and Kane to make England an aggressive goal scoring machine. We argue that such a combination can become a world cup winning strategy given how well all three players are currently performing. </p>
+	</div>
+	<div class="container" id = "title-frame-for-kane">
+		<div class = "row">
+			<h3>Summary</h3>
+		</div>
+	</div>
+	<div class="row">
+		<p> We think and the data supports that these three players playing key roles in attack, midfield and defence can make the difference that can help England bring the cup home this year. If you would like to learn more about the data we have used please refer to <a href="https://statsbomb.com/what-we-do/soccer-data/">StatsbombR</a> and <a href ="https://fbref.com/en/">fbref.com</a> which have albeit less data on international matches, has great information on soccer as a whole.</p>
 	</div>
 <footer class="site-footer">
 	<span class="site-footer-owner"><a href="https://github.com/timschott/footy-viz">footy-viz</a> is maintained by <a href="https://github.com/timschott">timschott</a>.</span>

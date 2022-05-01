@@ -178,7 +178,7 @@
 		</div>
 	</div>
 	<div class="d-flex justify-content-center" id="mount-touch-area">
-		<center><img src="extra/mount-touches.png" width="800" height="800" alt="Mount Touches image" class="img-fluid"></center>
+		<center><img src="extra/mount-touches.png" width="850" height="800" alt="Mount Touches image" class="img-fluid"></center>
 	</div>
 	<div class="row">
 		<p>Mount touched the ball in all parts of the field, mostly past the halfway line. Mount is especially proactive in the <i>attacking third</i>, the third of the field closest to the oppositions goal. He had the most number of touches on the wide areas to the right and left of the goal (255 and 321 respectively).</p> 

@@ -176,6 +176,7 @@
 		<div class="row">
 			<h5>Where does Mount touch the ball?</h5>
 		</div>
+	<br><br>
 	</div>
 	<div class="d-flex justify-content-center" id="mount-touch-area">
 		<center><img src="extra/mount-touches.png" width="850" height="550" alt="Mount Touches image" class="img-fluid"></center>

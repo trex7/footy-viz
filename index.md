@@ -79,13 +79,15 @@
 			<div class="embed-responsive embed-responsive-16by9">
 			<iframe embed-responsive-item src="https://www.youtube.com/embed/uY6tgCNg-cU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
-		</div>
+		</div><br>
+	<br>
 		<div class = "col">
 			<p>This is footage from a club match in England. The team in blue, Manchester City, enjoys most of the ball possession. You can see their aggressive defending style around the 40-second mark. They arrange their team differently than the first clip: 4 defenders at the back, and then a mixture of midfielders and forwards that lead their attacks on goal.</p>
 			<div class="embed-responsive embed-responsive-16by9">
 				<iframe embed-responsive-item src="https://www.youtube.com/embed/FONVyowNjUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
-		</div>
+		</div><br>
+	<br>
 		<div class="row">
 			<p>It's common to classify the way that teams arrange their players into a <i>lineup</i>. These clips show different strategies, with Manchester City adopting something like a "4-5-1" and Hoffenheim adopting a "3-5-2." To interpret these labels, you read from left to right with the left most number representing the number of defenders. For instance, Manchester City used <b>4</b> defenders, <b>5</b> midfielders, and <b>1</b> forward.</p> 
 			<p>The choice of lineup is quite important because it implicates which players will be selected; you cannot have a team with 11 defenders running around. For national teams like England, the problem is magnified because every player is phenomenal. So, before exploring the strengths of our key players, we want to consider the best lineup choice for England.</p>
@@ -106,7 +108,8 @@
 			<p>Click between formations to see how think they should play.</p>
 			<p>We've highlighted the positions of our 3 key players.</p>
 		</div>
-	</div>
+	</div><br>
+	<br>
 	<div class="container" id = "image-container">
 		<div class="row">
 			<div class="col-lg-6">
@@ -120,11 +123,13 @@
 				<input type="image" src="https://raw.githubusercontent.com/timschott/footy-viz/main/extra/4-2-3-1.png" style="opacity: 0.6;" onclick="new_lineup()"  onmouseout="this.style.opacity=0.6;" onmouseover="this.style.opacity=1;" class="img-fluid">
 			</div>
 		</div>	
-	</div>
+	</div><br>
+	<br>
 	<div class="container" id="positions-board-title">
 		<h5><span id="tactics-title">3-4-2-1</span></h5>
 		<p id="tactics-explainer">England's usual formation, which lost them the Euro 2020 Finals match. England scored a goal 2 minutes after kickoff, but managed just 1 shot on target the rest of the match. Trent-Alexander Arnold did not play, while <span id ='red-span'>Mason Mount</span> and <span id ='red-span'>Harry Kane</span> (highlighted in <span id ='red-span'>red</span>) performed poorly. This formation is relatively conservative, especially given the players England used. They fielded a team with 5 defenders instead of the usual 4. Their outside defenders (Shaw and Trippier) were tasked with shutting down wide options for Italy. This left England with scant attacking options.</p>
-	</div>
+	</div><br>
+	<br>
 	<div class="d-flex justify-content-center" id="positions-board">
 	</div><br>
 	<br>

@@ -317,7 +317,6 @@ minutes_data %>%
   summarize(minutes = sum(MinutesPlayed)) %>%
   mutate(nineties = minutes/90)
 
-
 trent_passes <- apply(trent_passes,2,as.character)
 
 write.csv(trent_passes, "trent_passes.csv")

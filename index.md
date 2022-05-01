@@ -126,12 +126,14 @@
 		<p id="tactics-explainer">England's usual formation, which lost them the Euro 2020 Finals match. England scored a goal 2 minutes after kickoff, but managed just 1 shot on target the rest of the match. Trent-Alexander Arnold did not play, while <span id ='red-span'>Mason Mount</span> and <span id ='red-span'>Harry Kane</span> (highlighted in <span id ='red-span'>red</span>) performed poorly. This formation is relatively conservative, especially given the players England used. They fielded a team with 5 defenders instead of the usual 4. Their outside defenders (Shaw and Trippier) were tasked with shutting down wide options for Italy. This left England with scant attacking options.</p>
 	</div>
 	<div class="d-flex justify-content-center" id="positions-board">
-	</div>
+	</div><br>
+	<br>
 	<div class="container" id="tactics-outtro">
 		<div class = "row">
 			<p>Now that we've established the structure of soccer teams in general and recommended a starting lineup for England, let's have a look at our key players and why we believe their presence is a critical factor for England's success.</p>
 		</div>
-	</div>
+	</div><br>
+	<br>
 	<div class="container" id = "title-frame-for-kane">
 		<div class = "row">
 			<h3>Harry Kane</h3>
@@ -146,7 +148,8 @@
 			<p>His playing style can be described as the perfect mixture of pragmatism and athleticism. His large frame lets him excel in aerial duels, yet his excellent footwork and great passing ability allows him to easily incorporate his teammates into attacking plays. He is far and away England's most important player. </p>
 			<p>Let's take a look at Kane's international goal scoring.</p>
 		</div>
-	</div>
+	</div><br>
+	<br>
 	<div class="d-flex justify-content-center" id="goal-numbers-container">
 	</div><br>
 	<br>

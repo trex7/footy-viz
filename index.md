@@ -194,6 +194,7 @@
 	<div class="d-flex justify-content-center" id="mount-pass-area">
 		<img src="extra/mount-passes.png" alt="Mount Passes image" class="img-fluid">
 	</div>
+	<br><br>
 	<div class="row">
 		<p>This graphic visualizes the position of the ball and the direction of the pass. All of these passes have end positions in the attacking third. The cluster in the wing positions illustrate how much he likes to create plays in those positions and then eventually slide in passes in the centre.</p>
 		<p>Going forward, England would do well to utilize his creativity by continuing to entrust him with the responsibility of creating scoring chances for strikers like Kane. Plus, as he continues to develop and gain experience, he'll also improve as a shooter and start to score goals of his own.</p>

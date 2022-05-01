@@ -148,12 +148,14 @@
 		</div>
 	</div>
 	<div class="d-flex justify-content-center" id="goal-numbers-container">
-	</div>
+	</div><br>
+	<br>
 	<div class="container" id="graph-outtro">
 		<div class = "row">
 			<p>Kane has scored more goals than any player in the world over the past 2 major competitions. He is well on his way to breaking England's all-time scoring record as well. For some in-depth analysis, let's take a look at where on the field he most effectively shoots from.</p>
 		</div>
-	</div>
+	</div><br>
+	<br>
 	<div class="d-flex justify-content-center" id="shot-graph-area">
 		<img src="extra/shots-graph-2.png" alt="Harry Kane shot graph" class="img-fluid">
 	</div><br>

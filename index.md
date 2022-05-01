@@ -211,7 +211,7 @@
 	</div>
 	<p>But before we begin, let us look at some ideal attacking and defensive radar charts so we can get a good baseline understanding of different playstyles</p>
 	<div class="d-flex justify-content-center" id="mount-pass-area">
-		<img src="extra/together_base.png" alt="together radar image" class="img-fluid">
+		<img src="extra/together_base_final.png" alt="together radar image" class="img-fluid">
 	</div>
 	<p>Let us now contrast these shapes to how Trent compares to other talented defenders currently in Englands International team such as Kyle Walker</p>
 	<div class="d-flex justify-content-center" id="mount-touch-area">

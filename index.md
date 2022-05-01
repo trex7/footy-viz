@@ -207,17 +207,18 @@
 	<div class="container" id="mount-intro">
 		<div class="row">
 			<p>Trent is an up and coming defender who has consistently been performing very well in the local leagues but hasnt played alot in the international games. We feel he can make a big difference in helping Mount and Kane in winning games.</p>
-			<p>Lets compare him with the other talented defenders currently in Englands International team such as Kyle Walker and understand the difference he can make</p>
 		</div>
 	</div>
+	<p>But before we begin, let us look at some ideal attacking and defensive radar charts so we can get a good baseline understanding of different playstyles</p>
+	<div class="d-flex justify-content-center" id="mount-pass-area">
+		<img src="extra/together_base.png" alt="together radar image" class="img-fluid">
+	</div>
+	<p>Let us now contrast these shapes to how Trent compares to other talented defenders currently in Englands International team such as Kyle Walker</p>
 	<div class="d-flex justify-content-center" id="mount-touch-area">
 		<img src="extra/trent_radar.png" alt="Trent Passing image" class="img-fluid">
 	</div>
 	<div class="row">
-		<p> By reflecting Trent and Kyles playstyle to the ideal attacking and defensive charts below you can see how Trent is more suited towards an attacking playstyle as compared to Kyle who is more defensive.</p>
-	</div>
-	<div class="d-flex justify-content-center" id="mount-pass-area">
-		<img src="extra/together_base.png" alt="together radar image" class="img-fluid">
+		<p> By reflecting Trent and Kyles playstyle to the ideal attacking and defensive charts above you can see how Trent is more suited towards an attacking playstyle as compared to Kyle who is more defensive.</p>
 	</div>
 	<div class="row">
 		<p> This data lays a strong argument that Trent's attacking playstyle will link very well with Mount and Kane to make England an aggressive goal scoring machine. We argue that such a combination can become a world cup winning strategy given how well all three players are currently performing. </p>

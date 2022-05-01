@@ -156,7 +156,8 @@
 	</div>
 	<div class="d-flex justify-content-center" id="shot-graph-area">
 		<img src="extra/shots-graph-2.png" alt="Harry Kane shot graph" class="img-fluid">
-	</div>
+	</div><br>
+	<br>
 	<div class="container" id = "title-frame-for-kane">
 		<div class = "row">
 			<h3>Mason Mount</h3>

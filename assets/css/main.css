@@ -36,6 +36,11 @@ body {
 	font-size: 30px;
 }
 
+#mount-nav {
+	color: #f7fbff;
+	font-size: 30px;
+}
+
 #tactics-title {
 	color: #EA1F29;
 	font-weight: 700;

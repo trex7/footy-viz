@@ -15,6 +15,8 @@
 			<li><a href="#tactics" id ="tactics-nav">Tactics</a></li>
 			<li>&nbsp;|&nbsp;</li>
 			<li><a href="#harry-kane" id ="kane-nav">Harry Kane</a></li>
+			<li>&nbsp;|&nbsp;</li>
+			<li><a href="#mason-mount" id ="mount-nav">Mason Mount</a></li>
 		</ul>
 	</div>
 </header>
@@ -167,7 +169,7 @@
 		<div class="row">
 			<p>Mason Mount is a young attacking midfielder who has been impressive in the club tournaments for Chelsea and made quite an impact in the Euro 2018 and World 2020. As a midfielder, he is responsible for attacking as well getting back on defense and helping his team win the ball back.</p>
 			<p>Considering this, his performance in these two international tournaments was brilliant.</p>
-			<p>Lets explore he touches the ball and where he passes the ball -- two important components of a midfielder's job description..</p>
+			<p>Lets explore he touches the ball and where he passes the ball -- two important components of a midfielder's job description.</p>
 		</div>
 	</div>
 	<div class="container" id = "mount-image-container">

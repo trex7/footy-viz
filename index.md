@@ -45,7 +45,7 @@
 				<img src="extra/trent_playing_card.png" alt="Trent Alexander-Arnold playing card" class="img-fluid">
 			</div>
 		</div>
-	</div>
+	</div><br>
 	<div class="container" id = "title-frame-for-primer">
 		<div class = "row">
 			<h3>Contextual Primer</h3>
@@ -66,7 +66,7 @@
 			<p>Besides the World Cup, another major tournament England competes in is the European Cup ("The Euros") which is also played every 4 years.</p>
 			<p>To get a better sense of what a soccer team looks lke in action, we're going to introduce a few videos and screencaps from matches.</p>
 		</div>
-	</div>
+	</div><br>
 	<div class="container" id = "primer">
 		<div class = "row">
 			<h3>Match Footage</h3>
@@ -92,7 +92,8 @@
 			<p>It's common to classify the way that teams arrange their players into a <i>lineup</i>. These clips show different strategies, with Manchester City adopting something like a "4-5-1" and Hoffenheim adopting a "3-5-2." To interpret these labels, you read from left to right with the left most number representing the number of defenders. For instance, Manchester City used <b>4</b> defenders, <b>5</b> midfielders, and <b>1</b> forward.</p> 
 			<p>The choice of lineup is quite important because it implicates which players will be selected; you cannot have a team with 11 defenders running around. For national teams like England, the problem is magnified because every player is phenomenal. So, before exploring the strengths of our key players, we want to consider the best lineup choice for England.</p>
 		</div>
-	</div>
+	</div><br>
+	<br>
 	<div class="container" id = "title-frame-for-d3">
 		<div class = "row">
 			<h3>Tactics</h3>

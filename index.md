@@ -45,7 +45,7 @@
 				<img src="extra/trent_playing_card.png" alt="Trent Alexander-Arnold playing card" class="img-fluid">
 			</div>
 		</div>
-	</div><br>
+	</div>
 	<div class="container" id = "title-frame-for-primer">
 		<div class = "row">
 			<h3>Contextual Primer</h3>
@@ -66,7 +66,7 @@
 			<p>Besides the World Cup, another major tournament England competes in is the European Cup ("The Euros") which is also played every 4 years.</p>
 			<p>To get a better sense of what a soccer team looks lke in action, we're going to introduce a few videos and screencaps from matches.</p>
 		</div>
-	</div><br>
+	</div>
 	<div class="container" id = "primer">
 		<div class = "row">
 			<h3>Match Footage</h3>
@@ -79,20 +79,18 @@
 			<div class="embed-responsive embed-responsive-16by9">
 			<iframe embed-responsive-item src="https://www.youtube.com/embed/uY6tgCNg-cU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
-		</div><br>
-	
+		</div>
 		<div class = "col">
-			<p>This is footage from a club match in England. The team in blue, Manchester City, enjoys most of the ball possession. You can see their aggressive defending style around the 40-second mark. They arrange their team differently than the first clip: 4 defenders at the back, and then a mixture of midfielders and forwards that lead their attacks on goal.</p><br>
+			<p>This is footage from a club match in England. The team in blue, Manchester City, enjoys most of the ball possession. You can see their aggressive defending style around the 40-second mark. They arrange their team differently than the first clip: 4 defenders at the back, and then a mixture of midfielders and forwards that lead their attacks on goal.</p>
 			<div class="embed-responsive embed-responsive-16by9">
 				<iframe embed-responsive-item src="https://www.youtube.com/embed/FONVyowNjUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
-		</div><br>
-	<br>
+		</div>
 		<div class="row">
 			<p>It's common to classify the way that teams arrange their players into a <i>lineup</i>. These clips show different strategies, with Manchester City adopting something like a "4-5-1" and Hoffenheim adopting a "3-5-2." To interpret these labels, you read from left to right with the left most number representing the number of defenders. For instance, Manchester City used <b>4</b> defenders, <b>5</b> midfielders, and <b>1</b> forward.</p> 
 			<p>The choice of lineup is quite important because it implicates which players will be selected; you cannot have a team with 11 defenders running around. For national teams like England, the problem is magnified because every player is phenomenal. So, before exploring the strengths of our key players, we want to consider the best lineup choice for England.</p>
 		</div>
-	</div><br>
+	</div>
 	<div class="container" id = "title-frame-for-d3">
 		<div class = "row">
 			<h3>Tactics</h3>
@@ -108,8 +106,7 @@
 			<p>Click between formations to see how think they should play.</p>
 			<p>We've highlighted the positions of our 3 key players.</p>
 		</div>
-	</div><br>
-	<br>
+	</div>
 	<div class="container" id = "image-container">
 		<div class="row">
 			<div class="col-lg-6">
@@ -123,13 +120,11 @@
 				<input type="image" src="https://raw.githubusercontent.com/timschott/footy-viz/main/extra/4-2-3-1.png" style="opacity: 0.6;" onclick="new_lineup()"  onmouseout="this.style.opacity=0.6;" onmouseover="this.style.opacity=1;" class="img-fluid">
 			</div>
 		</div>	
-	</div><br>
-	<br>
+	</div>
 	<div class="container" id="positions-board-title">
 		<h5><span id="tactics-title">3-4-2-1</span></h5>
 		<p id="tactics-explainer">England's usual formation, which lost them the Euro 2020 Finals match. England scored a goal 2 minutes after kickoff, but managed just 1 shot on target the rest of the match. Trent-Alexander Arnold did not play, while <span id ='red-span'>Mason Mount</span> and <span id ='red-span'>Harry Kane</span> (highlighted in <span id ='red-span'>red</span>) performed poorly. This formation is relatively conservative, especially given the players England used. They fielded a team with 5 defenders instead of the usual 4. Their outside defenders (Shaw and Trippier) were tasked with shutting down wide options for Italy. This left England with scant attacking options.</p>
-	</div><br>
-	<br>
+	</div>
 	<div class="d-flex justify-content-center" id="positions-board">
 	</div><br>
 	<br>
@@ -210,41 +205,6 @@
 	<div class="row">
 		<p>This graphic visualizes the position of the ball and the direction of the pass. All of these passes have end positions in the attacking third. The cluster in the wing positions illustrate how much he likes to create plays in those positions and then eventually slide in passes in the centre.</p>
 		<p>Going forward, England would do well to utilize his creativity by continuing to entrust him with the responsibility of creating scoring chances for strikers like Kane. Plus, as he continues to develop and gain experience, he'll also improve as a shooter and start to score goals of his own.</p>
-	</div>
-	<div class="container" id = "title-frame-for-kane">
-		<div class = "row">
-			<h3>Trent Alexander Arnold(Defender)</h3>
-		</div>
-		<div class = "row">
-			<h5>What does Trent bring to the table?</h5>
-		</div>
-	</div>
-	<div class="container" id="mount-intro">
-		<div class="row">
-			<p>Trent is an up and coming defender who has consistently been performing very well in the local leagues but hasnt played alot in the international games. We feel he can make a big difference in helping Mount and Kane in winning games.</p>
-		</div>
-	</div>
-	<p>But before we begin, let us look at some ideal attacking and defensive radar charts so we can get a good baseline understanding of different playstyles</p>
-	<div class="d-flex justify-content-center" id="mount-pass-area">
-		<img src="extra/together_base_final.png" alt="together radar image" class="img-fluid">
-	</div>
-	<p>Let us now contrast these shapes to how Trent compares to other talented defenders currently in Englands International team such as Kyle Walker</p>
-	<div class="d-flex justify-content-center" id="mount-touch-area">
-		<img src="extra/trent_radar.png" alt="Trent Passing image" class="img-fluid">
-	</div>
-	<div class="row">
-		<p> By reflecting Trent and Kyles playstyle to the ideal attacking and defensive charts above you can see how Trent is more suited towards an attacking playstyle as compared to Kyle who is more defensive.</p>
-	</div>
-	<div class="row">
-		<p> This data lays a strong argument that Trent's attacking playstyle will link very well with Mount and Kane to make England an aggressive goal scoring machine. We argue that such a combination can become a world cup winning strategy given how well all three players are currently performing. </p>
-	</div>
-	<div class="container" id = "title-frame-for-kane">
-		<div class = "row">
-			<h3>Summary</h3>
-		</div>
-	</div>
-	<div class="row">
-		<p> We think and the data supports that these three players playing key roles in attack, midfield and defence can make the difference that can help England bring the cup home this year. If you would like to learn more about the data we have used please refer to <a href="https://statsbomb.com/what-we-do/soccer-data/">StatsbombR</a> and <a href ="https://fbref.com/en/">fbref.com</a> which have albeit less data on international matches, has great information on soccer as a whole.</p>
 	</div>
 <footer class="site-footer">
 	<span class="site-footer-owner"><a href="https://github.com/timschott/footy-viz">footy-viz</a> is maintained by <a href="https://github.com/timschott">timschott</a>.</span>

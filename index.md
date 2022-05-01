@@ -45,7 +45,7 @@
 				<img src="extra/trent_playing_card.png" alt="Trent Alexander-Arnold playing card" class="img-fluid">
 			</div>
 		</div>
-	</div>
+	</div><br>
 	<div class="container" id = "title-frame-for-primer">
 		<div class = "row">
 			<h3>Contextual Primer</h3>
@@ -66,7 +66,7 @@
 			<p>Besides the World Cup, another major tournament England competes in is the European Cup ("The Euros") which is also played every 4 years.</p>
 			<p>To get a better sense of what a soccer team looks lke in action, we're going to introduce a few videos and screencaps from matches.</p>
 		</div>
-	</div>
+	</div><br>
 	<div class="container" id = "primer">
 		<div class = "row">
 			<h3>Match Footage</h3>
@@ -79,18 +79,20 @@
 			<div class="embed-responsive embed-responsive-16by9">
 			<iframe embed-responsive-item src="https://www.youtube.com/embed/uY6tgCNg-cU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
-		</div>
+		</div><br>
+	
 		<div class = "col">
-			<p>This is footage from a club match in England. The team in blue, Manchester City, enjoys most of the ball possession. You can see their aggressive defending style around the 40-second mark. They arrange their team differently than the first clip: 4 defenders at the back, and then a mixture of midfielders and forwards that lead their attacks on goal.</p>
+			<p>This is footage from a club match in England. The team in blue, Manchester City, enjoys most of the ball possession. You can see their aggressive defending style around the 40-second mark. They arrange their team differently than the first clip: 4 defenders at the back, and then a mixture of midfielders and forwards that lead their attacks on goal.</p><br>
 			<div class="embed-responsive embed-responsive-16by9">
 				<iframe embed-responsive-item src="https://www.youtube.com/embed/FONVyowNjUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
-		</div>
+		</div><br>
+	<br>
 		<div class="row">
 			<p>It's common to classify the way that teams arrange their players into a <i>lineup</i>. These clips show different strategies, with Manchester City adopting something like a "4-5-1" and Hoffenheim adopting a "3-5-2." To interpret these labels, you read from left to right with the left most number representing the number of defenders. For instance, Manchester City used <b>4</b> defenders, <b>5</b> midfielders, and <b>1</b> forward.</p> 
 			<p>The choice of lineup is quite important because it implicates which players will be selected; you cannot have a team with 11 defenders running around. For national teams like England, the problem is magnified because every player is phenomenal. So, before exploring the strengths of our key players, we want to consider the best lineup choice for England.</p>
 		</div>
-	</div>
+	</div><br>
 	<div class="container" id = "title-frame-for-d3">
 		<div class = "row">
 			<h3>Tactics</h3>
@@ -106,7 +108,8 @@
 			<p>Click between formations to see how think they should play.</p>
 			<p>We've highlighted the positions of our 3 key players.</p>
 		</div>
-	</div>
+	</div><br>
+	<br>
 	<div class="container" id = "image-container">
 		<div class="row">
 			<div class="col-lg-6">
@@ -120,18 +123,22 @@
 				<input type="image" src="https://raw.githubusercontent.com/timschott/footy-viz/main/extra/4-2-3-1.png" style="opacity: 0.6;" onclick="new_lineup()"  onmouseout="this.style.opacity=0.6;" onmouseover="this.style.opacity=1;" class="img-fluid">
 			</div>
 		</div>	
-	</div>
+	</div><br>
+	<br>
 	<div class="container" id="positions-board-title">
 		<h5><span id="tactics-title">3-4-2-1</span></h5>
 		<p id="tactics-explainer">England's usual formation, which lost them the Euro 2020 Finals match. England scored a goal 2 minutes after kickoff, but managed just 1 shot on target the rest of the match. Trent-Alexander Arnold did not play, while <span id ='red-span'>Mason Mount</span> and <span id ='red-span'>Harry Kane</span> (highlighted in <span id ='red-span'>red</span>) performed poorly. This formation is relatively conservative, especially given the players England used. They fielded a team with 5 defenders instead of the usual 4. Their outside defenders (Shaw and Trippier) were tasked with shutting down wide options for Italy. This left England with scant attacking options.</p>
-	</div>
+	</div><br>
+	<br>
 	<div class="d-flex justify-content-center" id="positions-board">
-	</div>
+	</div><br>
+	<br>
 	<div class="container" id="tactics-outtro">
 		<div class = "row">
 			<p>Now that we've established the structure of soccer teams in general and recommended a starting lineup for England, let's have a look at our key players and why we believe their presence is a critical factor for England's success.</p>
 		</div>
-	</div>
+	</div><br>
+	<br>
 	<div class="container" id = "title-frame-for-kane">
 		<div class = "row">
 			<h3>Harry Kane</h3>
@@ -146,17 +153,21 @@
 			<p>His playing style can be described as the perfect mixture of pragmatism and athleticism. His large frame lets him excel in aerial duels, yet his excellent footwork and great passing ability allows him to easily incorporate his teammates into attacking plays. He is far and away England's most important player. </p>
 			<p>Let's take a look at Kane's international goal scoring.</p>
 		</div>
-	</div>
+	</div><br>
+	<br>
 	<div class="d-flex justify-content-center" id="goal-numbers-container">
-	</div>
+	</div><br>
+	<br>
 	<div class="container" id="graph-outtro">
 		<div class = "row">
 			<p>Kane has scored more goals than any player in the world over the past 2 major competitions. He is well on his way to breaking England's all-time scoring record as well. For some in-depth analysis, let's take a look at where on the field he most effectively shoots from.</p>
 		</div>
-	</div>
+	</div><br>
+	<br>
 	<div class="d-flex justify-content-center" id="shot-graph-area">
 		<img src="extra/shots-graph-2.png" alt="Harry Kane shot graph" class="img-fluid">
-	</div>
+	</div><br>
+	<br>
 	<div class="container" id = "title-frame-for-kane">
 		<div class = "row">
 			<h3>Mason Mount</h3>
@@ -176,14 +187,17 @@
 		<div class="row">
 			<h5>Where does Mount touch the ball?</h5>
 		</div>
+	<br><br>
 	</div>
 	<div class="d-flex justify-content-center" id="mount-touch-area">
-		<img src="extra/mount-touches.png" alt="Mount Touches image" class="img-fluid">
+		<center><img src="extra/mount-touches.png" width="850" height="550" alt="Mount Touches image" class="img-fluid"></center>
 	</div>
+	<br><br>
 	<div class="row">
 		<p>Mount touched the ball in all parts of the field, mostly past the halfway line. Mount is especially proactive in the <i>attacking third</i>, the third of the field closest to the oppositions goal. He had the most number of touches on the wide areas to the right and left of the goal (255 and 321 respectively).</p> 
 		<p>What makes him effective from these positions is that he can then play in passes for strikers like Harry Kane to score goals.</p>
 	</div>
+	<br><br>
 	<div class="container" id = "mount-pass-intro">
 		<div class="row">
 			<h5>Where does Mount pass the ball?</h5>
@@ -191,7 +205,8 @@
 	</div>
 	<div class="d-flex justify-content-center" id="mount-pass-area">
 		<img src="extra/mount-passes.png" alt="Mount Passes image" class="img-fluid">
-	</div>
+	</div><br>
+	<br>
 	<div class="row">
 		<p>This graphic visualizes the position of the ball and the direction of the pass. All of these passes have end positions in the attacking third. The cluster in the wing positions illustrate how much he likes to create plays in those positions and then eventually slide in passes in the centre.</p>
 		<p>Going forward, England would do well to utilize his creativity by continuing to entrust him with the responsibility of creating scoring chances for strikers like Kane. Plus, as he continues to develop and gain experience, he'll also improve as a shooter and start to score goals of his own.</p>

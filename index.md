@@ -180,7 +180,7 @@
 	<div class="d-flex justify-content-center" id="mount-touch-area">
 		<center><img src="extra/mount-touches.png" width="850" height="550" alt="Mount Touches image" class="img-fluid"></center>
 	</div>
-	<br>
+	<br><br>
 	<div class="row">
 		<p>Mount touched the ball in all parts of the field, mostly past the halfway line. Mount is especially proactive in the <i>attacking third</i>, the third of the field closest to the oppositions goal. He had the most number of touches on the wide areas to the right and left of the goal (255 and 321 respectively).</p> 
 		<p>What makes him effective from these positions is that he can then play in passes for strikers like Harry Kane to score goals.</p>
